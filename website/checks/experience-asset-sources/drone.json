@@ -1,0 +1,42 @@
+{
+  "asset": "drone.png",
+  "tool": "built-in image_gen",
+  "use_case": "product-mockup",
+  "design_reference_viewed": "C:/Users/64576/Desktop/视界/outputs/homepage-design-v7/首页设计修订_v7.png",
+  "reference_role": "Inspected for visual style only; not cropped or passed as an edit target.",
+  "generated_source": "C:/Users/64576/.codex/generated_images/01a118df-2e1e-74e0-9df6-b9d1deebdb72/exec-88301bf2-b044-40e9-b131-7561e70d2a7e.png",
+  "original_width": 1536,
+  "original_height": 1024,
+  "original_sha256": "a0bc13dcdbf79e387b43a1dc6c29128a6a0f14751fbdeb3820f80a409dfb7cfe",
+  "original_preserved": true,
+  "destination": "C:/Users/64576/Desktop/视界/website/dist/assets/experience/drone.png",
+  "width": 768,
+  "height": 512,
+  "sha256": "bd1604d18286af2d9750315931b31cbdf40a2c22444579cdd968967d3fd5639e",
+  "bytes": 356189,
+  "derivative_processing": {
+    "tool": "FFmpeg",
+    "filter": "scale=672:448:flags=lanczos,pad=768:512:48:32:color=0x00000000,format=rgba",
+    "purpose": "Resize to requested canvas and keep the entire aircraft at approximately 85 percent of the width with transparent margins."
+  },
+  "prompt": "Use case: product-mockup. Asset type: transparent photographic cutout for a bright modern drone-inspection website hero, not a complete UI. Generate ONE realistic unbranded white industrial quadcopter drone, wide landscape composition with target canvas 768x512 (3:2). View almost directly from the front, camera slightly below the aircraft so its small black stabilized gimbal camera and landing legs are clearly visible. Nose and fuselage turned very slightly toward the right. Four separate white arms and all four complete rotor assemblies and propeller blades visible, no blades cut by the canvas. The aircraft occupies approximately 85 percent of the canvas width with small clean surrounding margins. Natural daylight from upper-left with realistic white polymer, matte metal, black camera lens and believable subtle surface details, crisp professional product photography and correct proportions. Match a clean white civilian inspection drone suited to a bright blue city skyline. Keep overall finish realistic and refined, not futuristic concept art or toy. Transparent background with REAL alpha, entirely isolated cutout, no background scene, no floor, no horizon, no cast ground shadow, no colored panel, no checkerboard fake transparency. No readable branding, logos, model names, text, letters, watermark, UI, bounding boxes or graphic effects. Make the rotor blades static and sharp enough for website display, very slight natural blur only at blade tips if needed. Return opaque drone pixels with transparent surrounding canvas as PNG.",
+  "inspection": {
+    "pixel_format": "Format32bppArgb",
+    "zero_alpha_pixels": 304212,
+    "partial_alpha_pixels": 84804,
+    "opaque_alpha_pixels": 4200,
+    "subject_bounds_alpha_gt_10": [
+      57,
+      85,
+      710,
+      438
+    ],
+    "subject_width_fraction": 0.8515625,
+    "real_alpha": true,
+    "alpha_composite_inspection": "Composited on a pale sky-blue background for inspection only; no black backdrop or visible halo remains.",
+    "all_four_rotors_visible": true,
+    "readable_branding": false,
+    "cropped_blades": false,
+    "ui_or_background_added": false
+  }
+}

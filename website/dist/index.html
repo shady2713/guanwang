@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#091117" />
+    <meta
+      name="description"
+      content="视界 AIMaster，面向无人机巡检的 AI 视觉分析平台。识别目标，分析时序与空间关系，将影像转化为可追溯的事件信息。支持私有化部署与 API 集成。"
+    />
+    <title>视界 AIMaster · 不止于识别，更在于理解</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23091117'/%3E%3Cpath d='M6 13V6h7M19 6h7v7M26 19v7h-7M13 26H6v-7' fill='none' stroke='%23ffbd59' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23ffbd59'/%3E%3C/svg%3E"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/hero-city.webp"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳转到主要内容</a>
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#home" aria-label="视界 AIMaster 首页"
+        ><span class="brand-mark" aria-hidden="true"></span><strong>视界</strong
+        ><span class="brand-product">AIMaster</span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span><span></span><span class="sr-only">打开导航菜单</span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <a href="#capabilities">产品能力</a>
+        <a href="/scenarios/">应用场景</a>
+        <a href="#integration">技术与集成</a>
+        <button type="button" data-dialog="services-dialog">产品与服务</button>
+        <button class="nav-cta" type="button" data-dialog="contact-dialog">
+          预约演示
+        </button>
+      </nav>
+      <div class="scroll-progress" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero-city.webp"
+          width="1672"
+          height="941"
+          alt="暮色中，城市道路与河岸从空中延伸至远方"
+          fetchpriority="high"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy content-width">
+          <p class="eyebrow hero-eyebrow">
+            <span></span> AI VISION. REAL INSIGHT.
+          </p>
+          <h1 id="hero-title">
+            不止于识别，<br />更在于理解<span class="title-dot">。</span>
+          </h1>
+          <p class="hero-positioning">无人机巡检 AI 视觉分析平台</p>
+          <p class="hero-description">
+            识别目标，分析行为与空间关系。<br />让每一帧影像，成为有据可循的业务信息。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#capabilities">探索产品能力</a
+            ><button
+              class="text-button play-link"
+              type="button"
+              data-dialog="overview-dialog"
+            >
+              <span class="play-icon" aria-hidden="true"></span>了解工作方式
+            </button>
+          </div>
+        </div>
+        <div class="hero-bottom content-width">
+          <a class="scroll-cue" href="#capabilities"
+            ><span class="scroll-line" aria-hidden="true"></span>向下探索</a
+          >
+          <p>目标识别<span>/</span>时序分析<span>/</span>空间关系</p>
+          <span class="image-note">AI 生成场景示意</span>
+        </div>
+      </section>
+
+      <section
+        class="capabilities content-width"
+        id="capabilities"
+        aria-labelledby="capability-title"
+      >
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">
+            <span class="section-number">01 /</span> 从画面到理解
+          </p>
+          <h2 id="capability-title">
+            看见目标。<br /><span class="muted">理解背后的关系。</span>
+          </h2>
+          <p class="section-lead">
+            面向巡检任务，关注画面中的对象、状态变化与位置关系，<br
+              class="desktop-break"
+            />将视觉信息转化为可复核的线索。
+          </p>
+        </div>
+        <div class="capability-layout">
+          <div class="capability-editorial" data-reveal>
+            <div class="capability-tabs" role="tablist" aria-label="分析能力">
+              <button
+                class="capability-tab active"
+                type="button"
+                role="tab"
+                id="cap-target"
+                aria-selected="true"
+                aria-controls="capability-panel"
+                data-capability="target"
+              >
+                <span>01</span>目标识别<small>画面中有什么</small>
+              </button>
+              <button
+                class="capability-tab"
+                type="button"
+                role="tab"
+                id="cap-temporal"
+                aria-selected="false"
+                aria-controls="capability-panel"
+                tabindex="-1"
+                data-capability="temporal"
+              >
+                <span>02</span>时序分析<small>状态如何持续或变化</small>
+              </button>
+              <button
+                class="capability-tab"
+                type="button"
+                role="tab"
+                id="cap-spatial"
+                aria-selected="false"
+                aria-controls="capability-panel"
+                tabindex="-1"
+                data-capability="spatial"
+              >
+                <span>03</span>空间关系<small>目标与区域有何关系</small>
+              </button>
+            </div>
+            <div
+              class="capability-description"
+              role="tabpanel"
+              id="capability-panel"
+              aria-labelledby="cap-target"
+              tabindex="0"
+            >
+              <h3 id="capability-heading">定位关注的目标。</h3>
+              <p id="capability-description">
+                识别人、车与物，标记目标在画面中的位置，为检索与后续分析提供依据。
+              </p>
+              <p class="fine-print" id="capability-condition">
+                识别效果与目标大小、清晰度、遮挡和光照有关。
+              </p>
+            </div>
+            <button
+              class="underlined-link"
+              type="button"
+              data-dialog="overview-dialog"
+            >
+              了解任务发起方式
+            </button>
+          </div>
+          <figure
+            class="capability-visual"
+            data-mode="target"
+            id="capability-visual"
+          >
+            <div class="visual-photo">
+              <img
+                src="assets/waterfront.webp"
+                width="1672"
+                height="941"
+                alt="滨水道路和步道上的车辆与人员，供分析方式示意"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="visual-vignette" aria-hidden="true"></div>
+              <div class="target-mark vehicle-mark" aria-hidden="true">
+                <span>车辆</span>
+              </div>
+              <div class="target-mark person-mark" aria-hidden="true">
+                <span>人员</span>
+              </div>
+              <svg
+                class="region-overlay"
+                viewBox="0 0 1000 562"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path d="M 590 224 L 660 247 L 734 360 L 654 340 Z" />
+              </svg>
+              <div class="region-label" aria-hidden="true">关注区域</div>
+              <div class="temporal-label" aria-hidden="true">
+                <span class="observation-line"></span>在连续视频中观察状态变化
+              </div>
+              <div class="visual-caption">
+                <span id="visual-caption">目标定位示意</span
+                ><span>AI 生成画面 · 非实测结果</span>
+              </div>
+            </div>
+            <figcaption>
+              <span class="caption-line" aria-hidden="true"></span
+              >同一场景，不同分析维度。根据任务配置所需能力。
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        class="scenarios"
+        id="scenarios"
+        aria-labelledby="scenario-title"
+      >
+        <div class="scenario-photos" aria-hidden="true">
+          <img
+            id="scene-city"
+            class="scenario-image active"
+            src="assets/hero-city.webp"
+            width="1672"
+            height="941"
+            alt=""
+            loading="lazy"
+          />
+          <img
+            id="scene-traffic"
+            class="scenario-image"
+            src="assets/waterfront.webp"
+            width="1672"
+            height="941"
+            alt=""
+            loading="lazy"
+          />
+          <img
+            id="scene-water"
+            class="scenario-image water-crop"
+            src="assets/waterfront.webp"
+            width="1672"
+            height="941"
+            alt=""
+            loading="lazy"
+          />
+          <img
+            id="scene-construction"
+            class="scenario-image"
+            src="assets/construction.webp"
+            width="1672"
+            height="941"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+        <div class="scenario-shade" aria-hidden="true"></div>
+        <div class="scenario-content content-width">
+          <div class="scenario-header">
+            <p class="eyebrow">
+              <span class="section-number">02 /</span> 理解，发生在真实场景
+            </p>
+            <p class="scenario-index"><span id="scene-index">01</span> / 04</p>
+          </div>
+          <div class="scene-tabs" role="tablist" aria-label="应用场景">
+            <button
+              class="active"
+              type="button"
+              role="tab"
+              id="tab-city"
+              aria-selected="true"
+              aria-controls="scene-panel"
+              data-scene="city"
+            >
+              城市管理
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-traffic"
+              aria-selected="false"
+              aria-controls="scene-panel"
+              tabindex="-1"
+              data-scene="traffic"
+            >
+              交通巡检
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-water"
+              aria-selected="false"
+              aria-controls="scene-panel"
+              tabindex="-1"
+              data-scene="water"
+            >
+              水域巡查
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-construction"
+              aria-selected="false"
+              aria-controls="scene-panel"
+              tabindex="-1"
+              data-scene="construction"
+            >
+              区域安全
+            </button>
+          </div>
+          <div
+            class="scene-story"
+            role="tabpanel"
+            id="scene-panel"
+            aria-labelledby="tab-city"
+            tabindex="0"
+          >
+            <p class="scene-kicker" id="scene-kicker">城市管理 / 巡查线索</p>
+            <h2 id="scenario-title">让城市的细节，<br />进入管理的视野。</h2>
+            <p class="scene-description" id="scene-description">
+              面向道路与公共区域，结合目标、位置和持续状态，辅助发现需要复核的占用与停放线索。
+            </p>
+            <dl class="scene-detail">
+              <div>
+                <dt>关注内容</dt>
+                <dd id="scene-focus">区域占用 · 车辆停放</dd>
+              </div>
+              <div>
+                <dt>结果用途</dt>
+                <dd id="scene-result">定位画面，辅助人工复核</dd>
+              </div>
+            </dl>
+            <button class="button outline" id="scene-details" type="button">
+              查看场景说明
+            </button>
+          </div>
+          <div class="scenario-bottom">
+            <span>场景应用示意</span>
+            <p>具体识别范围与适用条件，需结合现场素材及交付配置确认。</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="integration content-width"
+        id="integration"
+        aria-labelledby="integration-title"
+      >
+        <div class="integration-heading" data-reveal>
+          <p class="eyebrow">
+            <span class="section-number">03 /</span> 从理解到应用
+          </p>
+          <h2 id="integration-title">
+            每一次发现，<br /><span class="muted">都有可追溯的依据。</span>
+          </h2>
+          <p class="section-lead">
+            将分析结果与原始画面关联，<br />为复核、处置与系统协作提供信息。
+          </p>
+        </div>
+        <div class="output-list" data-reveal>
+          <div class="output-item">
+            <span class="output-index">01</span>
+            <div>
+              <h3>结构化事件</h3>
+              <p>记录事件类型、时间与相关目标，便于查询和后续处理。</p>
+            </div>
+            <span class="output-tag">EVENT</span>
+          </div>
+          <div class="output-item">
+            <span class="output-index">02</span>
+            <div>
+              <h3>画面与片段</h3>
+              <p>保留关联截图与视频片段，使判断依据可查看、可复核。</p>
+            </div>
+            <span class="output-tag">EVIDENCE</span>
+          </div>
+          <div class="output-item">
+            <span class="output-index">03</span>
+            <div>
+              <h3>业务系统对接</h3>
+              <p>通过 API 将分析结果接入现有平台，衔接既有工作流程。</p>
+            </div>
+            <span class="output-tag">INTEGRATION</span>
+          </div>
+        </div>
+        <div class="deployment-row">
+          <p>按需部署，连接既有系统。</p>
+          <div>
+            <span>私有化部署</span><span>AIMasterflow 流程配置</span
+            ><span>API 集成</span>
+          </div>
+          <button
+            class="underlined-link"
+            type="button"
+            data-dialog="technical-dialog"
+          >
+            查看接入与部署
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="contact content-width"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-inner">
+          <p class="eyebrow">LET’S SEE BEYOND.</p>
+          <h2 id="contact-title">让视觉理解，<br />服务于你的业务。</h2>
+          <div>
+            <p>从实际巡检素材出发，<br />确认场景、分析规则与接入方式。</p>
+            <button
+              class="button primary"
+              type="button"
+              data-dialog="contact-dialog"
+            >
+              预约产品演示
+            </button>
+          </div>
+        </div>
+        <span class="contact-wordmark" aria-hidden="true">AIMaster</span>
+      </section>
+    </main>
+
+    <footer class="site-footer content-width" id="resources">
+      <a class="brand" href="#home"
+        ><strong>视界</strong><span class="brand-product">AIMaster</span></a
+      >
+      <p>不止于识别，更在于理解</p>
+      <div>
+        <button type="button" data-dialog="technical-dialog">接入说明</button
+        ><button type="button" data-dialog="services-dialog">产品与服务</button
+        ><button type="button" data-dialog="privacy-dialog">隐私说明</button>
+      </div>
+    </footer>
+
+    <dialog
+      class="site-dialog"
+      id="overview-dialog"
+      aria-labelledby="overview-title"
+    >
+      <button class="dialog-close" type="button" aria-label="关闭弹窗">
+        ×
+      </button>
+      <p class="eyebrow">产品能力</p>
+      <h2 id="overview-title">从任务发起，到结果复核。</h2>
+      <p class="dialog-intro">
+        按业务问题选择任务方式，再根据场景配置分析流程。
+      </p>
+      <div class="detail-list">
+        <div>
+          <h3>用自然语言描述目标</h3>
+          <p>
+            通过文本表达希望检索的对象，例如查找画面中的车辆。可用表达与识别范围以实际配置为准。
+          </p>
+        </div>
+        <div>
+          <h3>以参考图片查找相似目标</h3>
+          <p>提供参考图片，在素材中检索具有相关视觉特征的目标。</p>
+        </div>
+        <div>
+          <h3>选择行业场景</h3>
+          <p>
+            依据预设场景，组合目标检测、时序条件或区域规则，形成可复核的事件信息。
+          </p>
+        </div>
+      </div>
+      <p class="dialog-note">
+        任务方式与数据来源相互独立。数据来源包括视频流、视频文件与图片；时序分析需要有效的连续观察条件。
+      </p>
+      <a class="button primary dialog-anchor" href="#capabilities"
+        >查看分析能力</a
+      >
+    </dialog>
+
+    <dialog
+      class="site-dialog"
+      id="technical-dialog"
+      aria-labelledby="technical-title"
+    >
+      <button class="dialog-close" type="button" aria-label="关闭弹窗">
+        ×
+      </button>
+      <p class="eyebrow">技术与集成</p>
+      <h2 id="technical-title">适配现场，融入现有流程。</h2>
+      <div class="detail-list">
+        <div>
+          <h3>数据接入</h3>
+          <p>
+            支持视频流、视频文件和图片。接入协议、编码与并发数量需结合项目环境确认。
+          </p>
+        </div>
+        <div>
+          <h3>流程配置</h3>
+          <p>
+            通过 AIMasterflow 配置分析步骤，按需要组织检测、筛选与结果输出。
+          </p>
+        </div>
+        <div>
+          <h3>私有化部署</h3>
+          <p>
+            根据并发视频、分辨率、分析场景与保存周期评估计算和存储资源。硬件配置需通过实际负载测试确定。
+          </p>
+        </div>
+        <div>
+          <h3>结果集成</h3>
+          <p>
+            通过 API
+            对接业务系统。具体字段、鉴权、回调与版本约定以项目接口文档为准。
+          </p>
+        </div>
+      </div>
+      <button
+        class="button primary"
+        type="button"
+        data-switch-dialog="contact-dialog"
+      >
+        沟通接入需求
+      </button>
+    </dialog>
+
+    <dialog
+      class="site-dialog"
+      id="services-dialog"
+      aria-labelledby="services-title"
+    >
+      <button class="dialog-close" type="button" aria-label="关闭弹窗">
+        ×
+      </button>
+      <p class="eyebrow">产品与服务</p>
+      <h2 id="services-title">明确产品范围，<br />按需配置服务。</h2>
+      <p class="dialog-intro">
+        围绕实际场景，确认授权范围、扩展需求与交付内容。
+      </p>
+      <div class="detail-list">
+        <div>
+          <h3>标准产品</h3>
+          <p>明确可用场景、部署方式、接入与并发范围，按约定提供产品授权。</p>
+        </div>
+        <div>
+          <h3>能力扩展</h3>
+          <p>根据新增场景、处理规模和接入要求，评估相应扩展方案。</p>
+        </div>
+        <div>
+          <h3>配套服务</h3>
+          <p>部署、培训、定制和现场支持分别确认服务范围与交付要求。</p>
+        </div>
+      </div>
+      <p class="dialog-note">价格与交付范围以正式报价为准。</p>
+      <button
+        class="button primary"
+        type="button"
+        data-switch-dialog="contact-dialog"
+      >
+        咨询产品方案
+      </button>
+    </dialog>
+
+    <dialog
+      class="site-dialog"
+      id="scene-dialog"
+      aria-labelledby="scene-dialog-title"
+    >
+      <button class="dialog-close" type="button" aria-label="关闭弹窗">
+        ×
+      </button>
+      <p class="eyebrow">场景说明</p>
+      <h2 id="scene-dialog-title">城市管理</h2>
+      <p class="dialog-intro" id="scene-dialog-description"></p>
+      <div class="detail-list">
+        <div>
+          <h3>分析依据</h3>
+          <p id="scene-dialog-basis"></p>
+        </div>
+        <div>
+          <h3>采集与使用条件</h3>
+          <p id="scene-dialog-conditions"></p>
+        </div>
+        <div>
+          <h3>输出与复核</h3>
+          <p>
+            提供相关事件信息与画面线索，供业务人员复核。具体输出字段及证据片段依场景配置确定。
+          </p>
+        </div>
+      </div>
+      <p class="dialog-note">
+        本页展示应用方式，场景画面为 AI
+        生成示意，不代表实测效果或当前版本完整交付范围。
+      </p>
+      <button
+        class="button primary"
+        type="button"
+        data-switch-dialog="contact-dialog"
+      >
+        沟通场景需求
+      </button>
+    </dialog>
+
+    <dialog
+      class="site-dialog contact-dialog"
+      id="contact-dialog"
+      aria-labelledby="contact-dialog-title"
+    >
+      <button class="dialog-close" type="button" aria-label="关闭弹窗">
+        ×
+      </button>
+      <p class="eyebrow">预约产品演示</p>
+      <h2 id="contact-dialog-title">从一个实际场景开始。</h2>
+      <p class="dialog-intro">
+        留下公司名称与联系方式，开启产品演示与场景沟通。
+      </p>
+      <p class="form-notice">
+        当前为静态演示，信息不会提交或发送。可下载需求草稿留存。
+      </p>
+      <form id="contact-form">
+        <label for="contact-company">公司名称 <span>必填</span></label
+        ><input
+          id="contact-company"
+          name="company"
+          autocomplete="organization"
+          placeholder="请输入公司名称"
+          maxlength="120"
+          required
+        /><label for="contact-channel">联系方式 <span>必填</span></label
+        ><input
+          id="contact-channel"
+          name="contact"
+          autocomplete="off"
+          placeholder="手机或邮箱"
+          maxlength="160"
+          required
+        /><button class="button primary" type="submit">下载需求草稿</button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </dialog>
+
+    <dialog
+      class="site-dialog"
+      id="privacy-dialog"
+      aria-labelledby="privacy-title"
+    >
+      <button class="dialog-close" type="button" aria-label="关闭弹窗">
+        ×
+      </button>
+      <p class="eyebrow">隐私说明</p>
+      <h2 id="privacy-title">当前静态演示的信息处理。</h2>
+      <div class="detail-list">
+        <div>
+          <h3>表单信息</h3>
+          <p>
+            本演示没有信息提交服务。填写内容仅在当前页面中处理，不会发送到服务器；下载时会保存在你的设备中。
+          </p>
+        </div>
+        <div>
+          <h3>浏览数据</h3>
+          <p>
+            页面未接入第三方统计或追踪工具，也不使用 Cookie
+            或本地存储保存表单信息。
+          </p>
+        </div>
+      </div>
+      <p class="dialog-note">
+        正式上线并接入咨询服务后，需要根据实际运营主体和数据处理方式更新隐私政策。
+      </p>
+    </dialog>
+    <noscript
+      ><p class="noscript-note">
+        当前浏览器未启用 JavaScript。正文可正常浏览；场景切换与弹窗需要启用
+        JavaScript。
+      </p></noscript
+    >
+  </body>
+</html>

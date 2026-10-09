@@ -1,0 +1,63 @@
+{
+  "checkedAtLocalDate": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "scope": "设计文档、契约、素材移交；不是网页实现验收",
+  "checks": {
+    "typescriptStrict": {
+      "passed": true,
+      "version": "5.9.3",
+      "checkedFiles": [
+        "contracts/domain.ts",
+        "contracts/examples.ts"
+      ]
+    },
+    "jsonParseAll": true,
+    "mediaSourceCopiesByteIdentical": true,
+    "mediaMetadataMatchesContractExamples": true,
+    "posterNativeDimensionsPreserved": true,
+    "referenceImagesByteIdentical": true,
+    "homepageContentMatchesContractExample": true,
+    "chainNodeCounts": [
+      4,
+      6,
+      4,
+      6
+    ],
+    "chainReferencesValid": true,
+    "pendingAnalysisHasNoInventedCoordinates": true,
+    "markdownCodeFencesBalanced": true,
+    "independentConsistencyReviewCompleted": true,
+    "reviewCorrections": [
+      "预设重播与观看模式保留时间分开",
+      "播放窗口使用源片秒",
+      "四条链节点名称统一",
+      "应用场景锚点统一",
+      "手机链默认摘要与纵向展开",
+      "身份不明新建目标ID",
+      "事件确认时间语义",
+      "人工演示与真实算法复核要求分开"
+    ]
+  },
+  "mediaObservation": {
+    "keyframesInspected": 21,
+    "completeFrameByFrameReview": false,
+    "audioContentReviewed": false
+  },
+  "notPerformed": [
+    "网页开发",
+    "浏览器交互与响应式验收",
+    "真实手机验收",
+    "逐帧跟踪标定",
+    "视频压缩或剪辑",
+    "视频重新生成",
+    "真实后端接入",
+    "预约提交",
+    "网站发布"
+  ],
+  "remainingAssets": [
+    "已确认Banner的独立干净背景",
+    "三支视频最终跟踪与动态ROI数据",
+    "经过验证的白车参考小图",
+    "网页压缩副本"
+  ]
+}

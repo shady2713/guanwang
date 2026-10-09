@@ -1,0 +1,44 @@
+{
+  "industry_categories": 16,
+  "capability_categories": 13,
+  "planning_items_covered": 217,
+  "industry_specific_descriptions_preserved": 90,
+  "default_industry": "city",
+  "default_industry_planning_items": 72,
+  "example_membership_valid": true,
+  "category_changes_are_same_page": true,
+  "source_content_unchanged": true,
+  "images": [
+    {
+      "display_number": 1,
+      "file": "C:\\Users\\64576\\Desktop\\视界\\outputs\\application-scenarios-design-v4\\01_分类与场景同页.png",
+      "dimensions": [
+        973,
+        1616
+      ],
+      "sha256": "72ee0541cae3f3d6d1b367d1d94041a32e6fcfaafa82f503dddbb4eb44ec5b66",
+      "copy_exact": true
+    },
+    {
+      "display_number": 2,
+      "file": "C:\\Users\\64576\\Desktop\\视界\\outputs\\application-scenarios-design-v4\\02_分类与场景同页.png",
+      "dimensions": [
+        973,
+        1616
+      ],
+      "sha256": "2da4bfd654c36c17ce6b2403665c9631f2080cdde85b6a16e59a74d43ecaa6bb",
+      "copy_exact": true
+    },
+    {
+      "display_number": 3,
+      "file": "C:\\Users\\64576\\Desktop\\视界\\outputs\\application-scenarios-design-v4\\03_分类与场景同页.png",
+      "dimensions": [
+        973,
+        1616
+      ],
+      "sha256": "91188518cb29b375cc599e7eb4aa2f00d49180fb85d9a590f406e8ee2beffe33",
+      "copy_exact": true
+    }
+  ],
+  "browser_interaction_verified": false
+}

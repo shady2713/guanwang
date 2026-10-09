@@ -1,0 +1,17 @@
+{
+  "asset": "animals-scene.png",
+  "use": "动物相关场景示意",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: generic animal-related scenario photo for the scenario catalog of a modern Chinese visual-analysis website. Generate ONLY a realistic natural documentary photograph, approximately 1000×680 landscape aspect ratio. Scene: a pleasant open grassy livestock pasture under normal daylight, a simple believable fence in the distance and softly rolling hills farther behind. Subject: a small, clearly separated handful of healthy ordinary cattle and sheep calmly grazing, with believable body proportions and anatomy and ordinary varied poses. Camera: medium-wide oblique view from a moderately elevated hillside or low aerial viewpoint, realistic scale, the animals large enough to notice while generous pasture surrounds them. Mood and lighting: clear natural daylight, soft authentic shadows, natural greens and neutral animal colors, no oversaturation, no fantasy or CGI atmosphere. No animal injuries, disease, emergency or unusual behavior. No readable signs, no brands or tags readable, no text, no detection boxes, no counting readouts, no user interface, no diagram or watermark. The photograph is only a generic animal-scene illustration, not proof of animal counting or species classification accuracy.",
+  "source_path": "C:\\Users\\64576\\.codex\\generated_images\\01a1162f-6758-7850-baae-9b6545d9faf8\\exec-7473fce0-016d-4205-a64c-8db321579156.png",
+  "output_path": "C:\\Users\\64576\\Desktop\\视界\\website\\dist\\assets\\scenarios\\animals-scene.png",
+  "width": 1519,
+  "height": 1035,
+  "sha256": "57C168ADA4BC8042B2E25D1B40638DAB4EFA4290B707E12A586ED760090256FB",
+  "verification": "已目视检查：正常日光牧场，少量牛羊平静食草，远处围栏与山丘，体型合理，无异常行为、检测框、计数读数或 UI。源图与项目图 SHA256 一致。",
+  "limitations": [
+    "AI 生成牧场动物场景示意，非客户实拍或算法实测输出。",
+    "画面不证明具体计数、物种分类或动物健康识别能力。",
+    "实际尺寸 1519×1035，保留 native 输出；未做图片编辑。"
+  ]
+}

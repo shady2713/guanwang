@@ -1,0 +1,8 @@
+{
+  "source": "../../outputs/application-scenarios-design-v2/website-scene-content.json",
+  "sha256": "43ac11b7b930faa612a4988225800527ea153771db28a82e69602989d280e474",
+  "industries": 16,
+  "capabilities": 13,
+  "items": 217,
+  "associations": 576
+}

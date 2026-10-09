@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0",
+  "note": "播放使用经过验证的网页派生版；标注坐标仍绑定原片（normalized 0..1 画幅坐标，派生版与原片同视野、同时间轴）。",
+  "assets": [
+    {
+      "schemaVersion": "1.0",
+      "mediaId": "industry-v1",
+      "scenarioId": "industry",
+      "sourceFilename": "01_行业场景_动作样片.mp4",
+      "sha256": "75a14723f494ceffb8613d87930167b852ee53642e0c7b8fc5df9bea5990a0a5",
+      "encodedWidth": 1264,
+      "encodedHeight": 640,
+      "durationSec": 10,
+      "timebase": "presentation-seconds",
+      "frameRate": { "numerator": 24, "denominator": 1 },
+      "encodedTimeBase": { "numerator": 1, "denominator": 1024 },
+      "bytes": 7234819,
+      "posterUrl": "media/posters/industry.jpg",
+      "posterSourceSec": 0.2,
+      "provenance": {
+        "kind": "user-provided-ai-generated",
+        "displayLabel": "AI 生成场景",
+        "generator": "交接包原始样片"
+      },
+      "deliveryState": "web-rendition-verified",
+      "sources": [{ "url": "media/industry.web.mp4", "mime": "video/mp4" }],
+      "renditions": [
+        {
+          "id": "web-1024",
+          "url": "media/industry.web.mp4",
+          "sha256": "afdf1c254eaa4f6e536d92aec1430fb029182539bfb3810b903a8d5099ca06f8",
+          "bytes": 1458343,
+          "width": 1024,
+          "height": 518,
+          "durationSec": 10,
+          "sameFieldOfView": true,
+          "timeline": "identical-presentation-timeline"
+        }
+      ],
+      "renditionVerification": {
+        "tool": "ffmpeg libx264 crf27 preset slow, yuv420p, -an, -g 48, +faststart",
+        "framesOriginal": 240,
+        "framesRendition": 240,
+        "startTimeSec": 0,
+        "durationSec": 10,
+        "audio": "removed in the web rendition; the original keeps its original track untouched",
+        "normalizedCoordinatesReusable": true
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "mediaId": "language-v1",
+      "scenarioId": "language",
+      "sourceFilename": "02_自然语言_动作样片.mp4",
+      "sha256": "bbb4217ab455d43637ddf556efc8762fb9e3647b403d7ea833792198a5106a66",
+      "encodedWidth": 1280,
+      "encodedHeight": 720,
+      "durationSec": 10,
+      "timebase": "presentation-seconds",
+      "frameRate": { "numerator": 24, "denominator": 1 },
+      "encodedTimeBase": { "numerator": 1, "denominator": 12800 },
+      "bytes": 32206654,
+      "posterUrl": "media/posters/language.jpg",
+      "posterSourceSec": 7.5,
+      "provenance": {
+        "kind": "user-provided-ai-generated",
+        "displayLabel": "AI 生成场景",
+        "generator": "交接包原始样片"
+      },
+      "deliveryState": "web-rendition-verified",
+      "sources": [{ "url": "media/language.web.mp4", "mime": "video/mp4" }],
+      "renditions": [
+        {
+          "id": "web-1024",
+          "url": "media/language.web.mp4",
+          "sha256": "bbd77174ab85124aa6d84be85f55a7d5572c36e680984945239c8446ca41c22c",
+          "bytes": 4652608,
+          "width": 1024,
+          "height": 576,
+          "durationSec": 10,
+          "sameFieldOfView": true,
+          "timeline": "identical-presentation-timeline"
+        }
+      ],
+      "renditionVerification": {
+        "tool": "ffmpeg libx264 crf27 preset slow, yuv420p, -an, -g 48, +faststart",
+        "framesOriginal": 240,
+        "framesRendition": 240,
+        "startTimeSec": 0,
+        "durationSec": 10,
+        "audio": "removed in the web rendition; the original keeps its original track untouched",
+        "normalizedCoordinatesReusable": true
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "mediaId": "image-v1",
+      "scenarioId": "image",
+      "sourceFilename": "03_以图搜图_动作样片.mp4",
+      "sha256": "7c129e01036aacb92cee66922b4ec6c55920b7262e0d39d313aba30df549dcaa",
+      "encodedWidth": 1216,
+      "encodedHeight": 672,
+      "durationSec": 10,
+      "timebase": "presentation-seconds",
+      "frameRate": { "numerator": 24, "denominator": 1 },
+      "encodedTimeBase": { "numerator": 1, "denominator": 12288 },
+      "bytes": 8252217,
+      "posterUrl": "media/posters/image-search.jpg",
+      "posterSourceSec": 8.5,
+      "provenance": {
+        "kind": "user-provided-ai-generated",
+        "displayLabel": "AI 生成场景",
+        "generator": "交接包原始样片"
+      },
+      "deliveryState": "web-rendition-verified",
+      "sources": [{ "url": "media/image-search.web.mp4", "mime": "video/mp4" }],
+      "renditions": [
+        {
+          "id": "web-1024",
+          "url": "media/image-search.web.mp4",
+          "sha256": "1e042d3d490b8c9fb9ec6296864b7f0053ef1f0ff5b5b918d2db861a1816de93",
+          "bytes": 2190885,
+          "width": 1024,
+          "height": 566,
+          "durationSec": 10,
+          "sameFieldOfView": true,
+          "timeline": "identical-presentation-timeline"
+        }
+      ],
+      "renditionVerification": {
+        "tool": "ffmpeg libx264 crf27 preset slow, yuv420p, -an, -g 48, +faststart",
+        "framesOriginal": 240,
+        "framesRendition": 240,
+        "startTimeSec": 0,
+        "durationSec": 10,
+        "audio": "removed in the web rendition; the original keeps its original track untouched",
+        "normalizedCoordinatesReusable": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-08",
+  "tool": "built-in image_gen",
+  "output": "C:\\Users\\64576\\Desktop\\视界\\outputs\\homepage-design-v9\\首页布局图_v9_精简版.png",
+  "generated_source": "C:\\Users\\64576\\.codex\\generated_images\\01a10f86-c9e3-7e72-bda8-18c37214f462\\exec-7fb4685b-ae02-41f9-aaa0-cfd6b0dea80a.png",
+  "width": 868,
+  "height": 1811,
+  "sha256": "4CA392FA49055A119BC1540E5BC623F7AA043310F623062448144706196884A6",
+  "copy_verified": true,
+  "review": "Visual review: complete header and footer; hero explanatory paragraph removed; task tab captions removed; six algorithm nodes retained in one horizontal strip; detailed event card and evidence thumbnails removed; small-target capability shown with enlarged image inset; verification section and four-service menu removed; booking remains a navigation CTA.",
+  "limitations": "Generated layout concept and illustrative imagery. Text reduction was reviewed visually, not quantified using OCR. No website code changed; no browser or mobile testing in this task."
+}

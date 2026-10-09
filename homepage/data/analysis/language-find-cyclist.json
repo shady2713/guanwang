@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "1.0",
+  "analysisId": "language-find-cyclist-v1",
+  "scenarioId": "language",
+  "presetId": "find-cyclist",
+  "status": "ready",
+  "provenance": {
+    "kind": "authored-demo",
+    "displayLabel": "功能演示",
+    "annotationMethod": "manual-reviewed"
+  },
+  "reviewedAt": "2026-10-09T00:00:00+08:00",
+  "media": {
+    "mediaId": "language-v1",
+    "sha256": "bbb4217ab455d43637ddf556efc8762fb9e3647b403d7ea833792198a5106a66",
+    "encodedWidth": 1280,
+    "encodedHeight": 720,
+    "durationSec": 10,
+    "timebase": "presentation-seconds",
+    "frameRate": {
+      "numerator": 24,
+      "denominator": 1
+    }
+  },
+  "playbackWindow": {
+    "startSec": 6.5,
+    "endSec": 9.75
+  },
+  "chain": {
+    "id": "chain-language",
+    "representation": "conceptual-preset",
+    "nodes": [
+      {
+        "id": "input",
+        "type": "input",
+        "label": "画面输入",
+        "description": "使用当前预设画面"
+      },
+      {
+        "id": "analyze",
+        "type": "detect",
+        "label": "目标分析",
+        "description": "分析画面中的关注目标"
+      },
+      {
+        "id": "match",
+        "type": "semantic-match",
+        "label": "文本条件匹配",
+        "description": "按预设文字条件匹配目标"
+      },
+      {
+        "id": "output",
+        "type": "output",
+        "label": "结果输出",
+        "description": "呈现符合条件的演示目标"
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "analyze"
+      },
+      {
+        "from": "analyze",
+        "to": "match"
+      },
+      {
+        "from": "match",
+        "to": "output"
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "cyclist-a",
+      "label": "目标 1",
+      "className": "cyclist",
+      "segments": [
+        {
+          "id": "cyclist-a-s1",
+          "interval": {
+            "startSec": 6.5,
+            "endSec": 9.76
+          },
+          "interpolation": "linear",
+          "maxInterpolationGapSec": 0.55,
+          "samples": [
+            {
+              "timeSec": 6.5,
+              "box": {
+                "x": 0.7025,
+                "y": 0.5521,
+                "width": 0.027,
+                "height": 0.06
+              }
+            },
+            {
+              "timeSec": 6.75,
+              "box": {
+                "x": 0.7,
+                "y": 0.5488,
+                "width": 0.028,
+                "height": 0.061
+              }
+            },
+            {
+              "timeSec": 7.0,
+              "box": {
+                "x": 0.6955,
+                "y": 0.5454,
+                "width": 0.028,
+                "height": 0.062
+              }
+            },
+            {
+              "timeSec": 7.25,
+              "box": {
+                "x": 0.6895,
+                "y": 0.5395,
+                "width": 0.029,
+                "height": 0.063
+              }
+            },
+            {
+              "timeSec": 7.5,
+              "box": {
+                "x": 0.6833,
+                "y": 0.5357,
+                "width": 0.029,
+                "height": 0.065
+              }
+            },
+            {
+              "timeSec": 7.75,
+              "box": {
+                "x": 0.675,
+                "y": 0.5296,
+                "width": 0.03,
+                "height": 0.066
+              }
+            },
+            {
+              "timeSec": 8.0,
+              "box": {
+                "x": 0.664,
+                "y": 0.5264,
+                "width": 0.031,
+                "height": 0.067
+              }
+            },
+            {
+              "timeSec": 8.25,
+              "box": {
+                "x": 0.6558,
+                "y": 0.5203,
+                "width": 0.031,
+                "height": 0.068
+              }
+            },
+            {
+              "timeSec": 8.5,
+              "box": {
+                "x": 0.648,
+                "y": 0.5165,
+                "width": 0.03,
+                "height": 0.07
+              }
+            },
+            {
+              "timeSec": 8.75,
+              "box": {
+                "x": 0.6392,
+                "y": 0.5105,
+                "width": 0.03,
+                "height": 0.071
+              }
+            },
+            {
+              "timeSec": 9.0,
+              "box": {
+                "x": 0.6298,
+                "y": 0.5072,
+                "width": 0.031,
+                "height": 0.072
+              }
+            },
+            {
+              "timeSec": 9.25,
+              "box": {
+                "x": 0.6196,
+                "y": 0.5012,
+                "width": 0.03,
+                "height": 0.073
+              }
+            },
+            {
+              "timeSec": 9.5,
+              "box": {
+                "x": 0.6045,
+                "y": 0.4979,
+                "width": 0.03,
+                "height": 0.074
+              }
+            },
+            {
+              "timeSec": 9.75,
+              "box": {
+                "x": 0.597,
+                "y": 0.4951,
+                "width": 0.029,
+                "height": 0.075
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyclist-b",
+      "label": "目标 2",
+      "className": "cyclist",
+      "segments": [
+        {
+          "id": "cyclist-b-s1",
+          "interval": {
+            "startSec": 6.5,
+            "endSec": 7.05
+          },
+          "interpolation": "linear",
+          "maxInterpolationGapSec": 0.55,
+          "samples": [
+            {
+              "timeSec": 6.5,
+              "box": {
+                "x": 0.6465,
+                "y": 0.1675,
+                "width": 0.025,
+                "height": 0.055
+              }
+            },
+            {
+              "timeSec": 6.75,
+              "box": {
+                "x": 0.657,
+                "y": 0.169,
+                "width": 0.024,
+                "height": 0.055
+              }
+            },
+            {
+              "timeSec": 7.0,
+              "box": {
+                "x": 0.6655,
+                "y": 0.1675,
+                "width": 0.025,
+                "height": 0.056
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyclist-c",
+      "label": "目标 3",
+      "className": "cyclist",
+      "segments": [
+        {
+          "id": "cyclist-c-s1",
+          "interval": {
+            "startSec": 8.75,
+            "endSec": 9.76
+          },
+          "interpolation": "linear",
+          "maxInterpolationGapSec": 0.55,
+          "samples": [
+            {
+              "timeSec": 8.75,
+              "box": {
+                "x": 0.814,
+                "y": 0.176,
+                "width": 0.028,
+                "height": 0.054
+              }
+            },
+            {
+              "timeSec": 9.0,
+              "box": {
+                "x": 0.843,
+                "y": 0.186,
+                "width": 0.028,
+                "height": 0.05
+              }
+            },
+            {
+              "timeSec": 9.25,
+              "box": {
+                "x": 0.873,
+                "y": 0.192,
+                "width": 0.028,
+                "height": 0.05
+              }
+            },
+            {
+              "timeSec": 9.5,
+              "box": {
+                "x": 0.903,
+                "y": 0.197,
+                "width": 0.028,
+                "height": 0.053
+              }
+            },
+            {
+              "timeSec": 9.75,
+              "box": {
+                "x": 0.937,
+                "y": 0.203,
+                "width": 0.028,
+                "height": 0.053
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rois": [],
+  "rules": [],
+  "events": [
+    {
+      "id": "ev-found",
+      "mediaId": "language-v1",
+      "kind": "target-found",
+      "timeSec": 6.9,
+      "visible": {
+        "startSec": 6.9,
+        "endSec": 9.75
+      },
+      "trackIds": [
+        "cyclist-a"
+      ],
+      "title": "找到骑行人员",
+      "evidenceIds": [
+        "ev-found-shot"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-found-shot",
+      "mediaId": "language-v1",
+      "timeSec": 6.9,
+      "extractedFromMedia": true
+    }
+  ],
+  "cues": [
+    {
+      "id": "c-query",
+      "range": {
+        "startSec": 6.5,
+        "endSec": 7.1
+      },
+      "kind": "query-reveal",
+      "targetId": "cyclist-a",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-input",
+      "range": {
+        "startSec": 6.7,
+        "endSec": 7.4
+      },
+      "kind": "node-emphasis",
+      "targetId": "input",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-analyze",
+      "range": {
+        "startSec": 7.3,
+        "endSec": 8.0
+      },
+      "kind": "node-emphasis",
+      "targetId": "analyze",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-match",
+      "range": {
+        "startSec": 8.1,
+        "endSec": 8.8
+      },
+      "kind": "node-emphasis",
+      "targetId": "match",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-output",
+      "range": {
+        "startSec": 8.9,
+        "endSec": 9.6
+      },
+      "kind": "node-emphasis",
+      "targetId": "output",
+      "purpose": "explanation"
+    }
+  ]
+}

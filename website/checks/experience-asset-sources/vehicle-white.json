@@ -1,0 +1,62 @@
+{
+  "asset": "vehicle-white.png",
+  "purpose": "Photorealistic transparent moving vehicle for a preset local website demonstration, not real inference output.",
+  "generation_method": "built-in image_gen",
+  "reference_inspected": "C:/Users/64576/Desktop/视界/website/dist/assets/waterfront.webp",
+  "native_source": "C:/Users/64576/.codex/generated_images/01a118df-6e67-7742-9756-31488c15ae11/exec-f864cf70-82ea-4d1f-b78d-22f2bf8e2ff2.png",
+  "native_preserved": true,
+  "native_size": [
+    1254,
+    1254
+  ],
+  "native_sha256": "d225afa74e8ce42dd073c10c564d1317dbbb50bec81ea00a2dc320c7a4d5b9ae",
+  "original_copy_sha256_verified": true,
+  "dimensions": [
+    512,
+    512
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "extrema": [
+      0,
+      255
+    ],
+    "completely_transparent_pixel_count": 172628,
+    "completely_transparent_pixel_ratio": 0.6585235595703125,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "alpha_bbox": [
+      14,
+      87,
+      485,
+      512
+    ],
+    "opaque_bbox_over_127": [
+      70,
+      96,
+      462,
+      440
+    ],
+    "low_alpha_pixel_count_between_1_and_15": 1574,
+    "note": "Genuine alpha transparency; image-generation output has sparse nearly invisible low-alpha noise outside the car, including near the bottom edge. The clearly visible vehicle has ample padding."
+  },
+  "final_sha256": "7158ebb37c0c086f668a64faac1febb7359ecb321af6cbb1d9471718ce046040",
+  "deterministic_processing": {
+    "tool": "ffmpeg",
+    "operation": "Lanczos resize only; no compositing, shape edits or background painting.",
+    "filter": "scale=512:512:flags=lanczos,format=rgba",
+    "native_original_unchanged": true
+  },
+  "inspection": {
+    "completed": true,
+    "observed": "One complete white sedan, front pointing upper-left, rear lower-right, clearly visible roof/rear window/taillights; no readable text, branding, ground, detection UI, checkerboard or watermark.",
+    "perspective_note": "The vehicle diagonal is slightly wider than the road direction in the reference; small CSS rotation can align the final placed sprite. This is an illustrative generated vehicle, not an actual captured road vehicle."
+  },
+  "prompt": "Use case: photorealistic-natural.\nAsset type: a transparent PNG vehicle cutout for compositing on a real aerial waterfront road photo in a website demo.\nPrimary request: Generate ONE ordinary unbranded white four-door sedan, alone, complete and uncut, on actual fully transparent background. Target canvas 512 x 512 pixels, square. Car occupies approximately 80 percent of canvas with clear padding.\nCamera and orientation are critical: oblique aerial camera about 55 degrees above the ground, positioned behind and to the RIGHT of the vehicle. Show roof, rear windshield, rear bumper and rear tail lamps, and the RIGHT side. The FRONT/NOSE points to the UPPER LEFT of the image at roughly 11 o'clock; the REAR/tail is nearest the camera in the LOWER RIGHT. This is a car driving away toward the upper left, not toward the viewer. Longitudinal axis nearly vertical diagonal from lower-right to upper-left, about 25 degrees counterclockwise from vertical. Use proportions and perspective consistent with a real drone overlooking a Chinese urban waterfront boulevard.\nLighting: natural neutral daylight from above, white paint with gentle real reflections, dark window glass, matte black tires, restrained diffuse short contact shadow close to car. Photorealistic sharp silhouette and realistic automotive detail, not a toy, diagram, isometric illustration or 3D game render.\nConstraints: exactly one car. No visible manufacturer branding or emblem, no readable license plate, no typography or numbers. NO road, ground plane, buildings, scenery, detection boxes, UI, watermarks or checkerboard pattern. Background pixels must be transparent alpha, including around windows/body outline; do not draw a fake transparency checkerboard. Preserve genuine alpha transparency.",
+  "refinement_prompt": "Use case: background-extraction.\nEdit the provided car cutout only to refine its canvas composition. Preserve the same realistic white sedan, lighting and rear aerial viewpoint. Deliver a square transparent PNG intended at 512 x 512. Make the complete car smaller so its longest visible extent occupies 78 percent of canvas. Center it with at least 10 percent genuinely empty transparent margin on every edge; all shadows must also end inside that margin, with no faint alpha noise touching any image edge. Turn the car slightly so the front continues to point to the upper left at roughly 11 o'clock, and the rear toward lower right at 5 o'clock, with the longitudinal axis about 25 degrees counterclockwise from vertical. Do not add background, ground, text, UI, logos, watermarks or a checkerboard. Preserve genuine alpha transparency.",
+  "created_local_date": "2026-10-08"
+}

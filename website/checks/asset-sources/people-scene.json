@@ -1,0 +1,12 @@
+{
+  "name": "人员场景示意",
+  "type": "generated-scenario-illustration",
+  "mode": "built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: a landscape photographic people-scenario illustration for a bright modern Chinese visual-understanding website, approximately 1000 by 680 pixels, approximately 3:2 framing. Primary request: a naturally observed photograph of a bright working area near a modern Chinese city construction site. Subject: two or three adult site workers wearing ordinary safety helmets and high-visibility reflective work vests, positioned naturally across the work area. Faces must be small and not identifiable. Environment: realistic urban construction surroundings, a clean concrete working surface, modest stacks of construction materials, partial site equipment and an unfinished structure visible in context. No elaborate dramatic hazards and no claim that any individual violates safety rules. Composition: slightly elevated oblique medium view from several meters above, retain clear facility context and keep whole people visible in the central scene, people should occupy a small portion of the image suitable for illustrating visual analysis of workers. Lighting: natural bright daylight, realistic shadows and ordinary neutral material colors, documentary real-world photography, no glossy CGI or cinematic grading. Constraints: no detection boxes, no UI, no annotation, no labels, no readable text or logos, no watermarks, no abnormality conclusion and no purported AI recognition output. This is only a generic photographic people-scene illustration and must not imply a specific PPE or action recognition result.",
+  "original_path": "C:\\Users\\64576\\.codex\\generated_images\\01a1162f-1c16-7c42-9642-21b417dcc9d2\\exec-dd205939-1efe-40b9-a33b-cea80c686b83.png",
+  "output_path": "C:/Users/64576/Desktop/视界/website/dist/assets/scenarios/people-scene.png",
+  "width": 1520,
+  "height": 1035,
+  "sha256": "E8E7FCEE89FF44BC53516B60A1672035C9301DA1506637E07E8690E545C82B35",
+  "limitations": "AI生成的通用人员场景示意照片，不代表特定PPE、动作或异常识别结果；保留原生尺寸，无UI、检测框或人工文字叠加。"
+}

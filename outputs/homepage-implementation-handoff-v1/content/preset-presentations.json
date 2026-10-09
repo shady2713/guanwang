@@ -1,0 +1,35 @@
+[
+  {
+    "selection": {
+      "scenarioId": "industry",
+      "presetId": "vehicle-detection"
+    },
+    "mediaId": "industry-v1"
+  },
+  {
+    "selection": {
+      "scenarioId": "industry",
+      "presetId": "region-entry"
+    },
+    "mediaId": "industry-v1"
+  },
+  {
+    "selection": {
+      "scenarioId": "language",
+      "presetId": "find-cyclist",
+      "queryId": "find-cyclist-preset"
+    },
+    "mediaId": "language-v1",
+    "query": {
+      "text": "查找骑行人员"
+    }
+  },
+  {
+    "selection": {
+      "scenarioId": "image",
+      "presetId": "similar-vehicle",
+      "referenceId": "vehicle-reference-preset"
+    },
+    "mediaId": "image-v1"
+  }
+]

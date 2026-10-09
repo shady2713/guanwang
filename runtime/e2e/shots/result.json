@@ -1,0 +1,42 @@
+{
+  "results": [
+    {
+      "id": "H01.hero",
+      "ok": true,
+      "note": "h1=\"不止于识别，更在于理解\""
+    },
+    {
+      "id": "H01.brand",
+      "ok": true,
+      "note": "brand=\"视界 AIMaster\""
+    },
+    {
+      "id": "H02.video-present",
+      "ok": true,
+      "note": "single video element"
+    },
+    {
+      "id": "H19.single-media-first-load",
+      "ok": true,
+      "note": "mp4 requests so far: [\"http://127.0.0.1:5178/media/industry.web.mp4\"]"
+    },
+    {
+      "id": "H05.plays",
+      "ok": true,
+      "note": "currentTime=1.51"
+    },
+    {
+      "id": "H05.pause-freezes",
+      "ok": true,
+      "note": "1.75 -> 1.75"
+    }
+  ],
+  "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "mediaRequests": [
+    "http://127.0.0.1:5178/media/industry.web.mp4",
+    "http://127.0.0.1:5178/media/industry.web.mp4"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "asset": "ships-scene.png",
+  "use": "船舶场景示意",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: generic ship scenario photograph for a modern Chinese visual-analysis product website. Generate ONLY a natural, realistic documentary photograph, approximately 1000×680 landscape aspect ratio. Scene: a calm navigable coastal or river port waterway in China in ordinary daylight, believable slightly murky blue-green water with subtle ripples; distant modern port cranes and docks occupy only the far background, a navigation buoy visible off to one side at a safe distance. Subject: one medium-sized working cargo ship under normal routine operation, natural hull geometry and deck details, viewed obliquely from a moderately elevated shoreline or drone position; the vessel is clearly the main subject, with ample surrounding water. Medium-wide aerial/oblique framing, physically credible perspective, realistic photography, natural weather and soft sunlight, no excessive saturation. No readable ship name, no readable hull numbers, no readable brands. No collision, fire, emergency or unsafe operation. No detection boxes, user interface, text overlays, diagrams, watermark, science-fiction effects or artificial CGI look. This is only an illustrative ship scene, not a vessel-classification or registration-number proof.",
+  "source_path": "C:\\Users\\64576\\.codex\\generated_images\\01a1162f-6758-7850-baae-9b6545d9faf8\\exec-7ada1f7f-ffb6-4879-8a4c-ae370d154f77.png",
+  "output_path": "C:\\Users\\64576\\Desktop\\视界\\website\\dist\\assets\\scenarios\\ships-scene.png",
+  "width": 1520,
+  "height": 1035,
+  "sha256": "FE7EA5510AB63477ECDA2CD3B0F186F65C77A7593E5A1D49072DD03FBE098353",
+  "verification": "已目视检查：正常运行货船、远处港区、航标，船名/船号不可读；无危险事故、检测框、UI、文字叠层或水印。源图与项目图 SHA256 一致。",
+  "limitations": [
+    "AI 生成的船舶场景示意，非客户实拍或算法实测。",
+    "画面不证明船型分类、船号识别或违章判断能力。",
+    "实际尺寸 1520×1035，保留 native 输出；未做图片编辑。"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "design_status": "selected",
+  "user_selection": "1吧",
+  "display_number": 1,
+  "concept_name": "平铺分类与三列场景",
+  "image": "C:\\Users\\64576\\Desktop\\视界\\outputs\\application-scenarios-design-v4\\01_分类与场景同页.png",
+  "image_sha256": "72ee0541cae3f3d6d1b367d1d94041a32e6fcfaafa82f503dddbb4eb44ec5b66",
+  "interaction_plan": "C:\\Users\\64576\\Desktop\\视界\\outputs\\application-scenarios-design-v4\\interaction-plan.json",
+  "default_view": "industry",
+  "default_category": "city",
+  "desktop_layout": {
+    "categories": "顶部两行平铺",
+    "scenes": "下方三列图文",
+    "selected_indicator": "蓝色文字与下划线",
+    "category_change": "同页更新",
+    "more_content": "在当前分类下追加"
+  },
+  "implementation_status": "not_started",
+  "copy_refinements": [
+    "删除图中自动生成、未经确定的顶部宣传标语",
+    "保留品牌理念：不止于识别，更在于理解",
+    "使用真实文字排版与获授权的正式素材"
+  ]
+}

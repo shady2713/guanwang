@@ -1,0 +1,218 @@
+{
+  "analysisId": "smoke-test",
+  "tracks": [
+    {
+      "id": "t1",
+      "label": "A",
+      "className": "vehicle",
+      "segments": [
+        {
+          "id": "t1s1",
+          "interval": {
+            "startSec": 0,
+            "endSec": 2
+          },
+          "interpolation": "linear",
+          "maxInterpolationGapSec": 1.5,
+          "samples": [
+            {
+              "timeSec": 0,
+              "box": {
+                "x": 0.1,
+                "y": 0.1,
+                "width": 0.1,
+                "height": 0.1
+              },
+              "anchor": {
+                "x": 0.15,
+                "y": 0.2
+              }
+            },
+            {
+              "timeSec": 1,
+              "box": {
+                "x": 0.3,
+                "y": 0.3,
+                "width": 0.1,
+                "height": 0.1
+              },
+              "anchor": {
+                "x": 0.35,
+                "y": 0.4
+              }
+            },
+            {
+              "timeSec": 1.9,
+              "box": {
+                "x": 0.5,
+                "y": 0.5,
+                "width": 0.1,
+                "height": 0.1
+              },
+              "anchor": {
+                "x": 0.55,
+                "y": 0.6
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rois": [
+    {
+      "id": "r1",
+      "label": "ROI",
+      "coordinateSpace": "encoded-frame-normalized",
+      "role": "ground-region",
+      "segments": [
+        {
+          "interval": {
+            "startSec": 0,
+            "endSec": 2
+          },
+          "interpolation": "linear",
+          "maxInterpolationGapSec": 1.0,
+          "samples": [
+            {
+              "timeSec": 0,
+              "vertices": [
+                {
+                  "y": 0.4,
+                  "x": 0.4
+                },
+                {
+                  "y": 0.4,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.4
+                }
+              ]
+            },
+            {
+              "timeSec": 0.5,
+              "vertices": [
+                {
+                  "y": 0.4,
+                  "x": 0.4
+                },
+                {
+                  "y": 0.4,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.4
+                }
+              ]
+            },
+            {
+              "timeSec": 1.0,
+              "vertices": [
+                {
+                  "y": 0.4,
+                  "x": 0.4
+                },
+                {
+                  "y": 0.4,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.4
+                }
+              ]
+            },
+            {
+              "timeSec": 1.5,
+              "vertices": [
+                {
+                  "y": 0.4,
+                  "x": 0.4
+                },
+                {
+                  "y": 0.4,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.4
+                }
+              ]
+            },
+            {
+              "timeSec": 1.9,
+              "vertices": [
+                {
+                  "y": 0.4,
+                  "x": 0.4
+                },
+                {
+                  "y": 0.4,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.8
+                },
+                {
+                  "y": 0.8,
+                  "x": 0.4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule1",
+      "type": "outside-to-inside",
+      "trackIds": [
+        "t1"
+      ],
+      "roiId": "r1",
+      "anchor": "annotated-ground-contact",
+      "boundary": "inside",
+      "minimumInsideSec": 0.3
+    }
+  ],
+  "events": [
+    {
+      "id": "ev1",
+      "kind": "region-entry",
+      "timeSec": 1.28,
+      "observedCrossingTimeSec": 0.98,
+      "visible": {
+        "startSec": 1.28,
+        "endSec": 2.0
+      },
+      "trackIds": [
+        "t1"
+      ],
+      "roiId": "r1",
+      "title": "车辆进入指定区域",
+      "evidenceIds": []
+    }
+  ]
+}

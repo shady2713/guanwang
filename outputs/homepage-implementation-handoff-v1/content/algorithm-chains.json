@@ -1,0 +1,218 @@
+[
+  {
+    "id": "chain-detection",
+    "representation": "conceptual-preset",
+    "nodes": [
+      {
+        "id": "input",
+        "type": "input",
+        "label": "视频输入",
+        "description": "使用当前预设视频"
+      },
+      {
+        "id": "preprocess",
+        "type": "preprocess",
+        "label": "抽帧处理",
+        "description": "按任务组织输入画面"
+      },
+      {
+        "id": "detect",
+        "type": "detect",
+        "label": "车辆检测",
+        "description": "定位画面中的车辆"
+      },
+      {
+        "id": "output",
+        "type": "output",
+        "label": "结果输出",
+        "description": "展示车辆位置"
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "preprocess"
+      },
+      {
+        "from": "preprocess",
+        "to": "detect"
+      },
+      {
+        "from": "detect",
+        "to": "output"
+      }
+    ]
+  },
+  {
+    "id": "chain-region-entry",
+    "representation": "conceptual-preset",
+    "nodes": [
+      {
+        "id": "input",
+        "type": "input",
+        "label": "视频输入",
+        "description": "使用当前预设视频"
+      },
+      {
+        "id": "preprocess",
+        "type": "preprocess",
+        "label": "抽帧处理",
+        "description": "按任务组织输入画面"
+      },
+      {
+        "id": "detect",
+        "type": "detect",
+        "label": "车辆检测",
+        "description": "定位画面中的车辆"
+      },
+      {
+        "id": "track",
+        "type": "track",
+        "label": "目标跟踪",
+        "description": "持续关联同一演示目标"
+      },
+      {
+        "id": "rule",
+        "type": "rule",
+        "label": "条件判断",
+        "description": "判断目标与关注区域的关系变化"
+      },
+      {
+        "id": "output",
+        "type": "output",
+        "label": "事件输出",
+        "description": "展示事件与关联画面"
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "preprocess"
+      },
+      {
+        "from": "preprocess",
+        "to": "detect"
+      },
+      {
+        "from": "detect",
+        "to": "track"
+      },
+      {
+        "from": "track",
+        "to": "rule"
+      },
+      {
+        "from": "rule",
+        "to": "output"
+      }
+    ]
+  },
+  {
+    "id": "chain-language",
+    "representation": "conceptual-preset",
+    "nodes": [
+      {
+        "id": "input",
+        "type": "input",
+        "label": "画面输入",
+        "description": "使用当前预设画面"
+      },
+      {
+        "id": "analyze",
+        "type": "detect",
+        "label": "目标分析",
+        "description": "分析画面中的关注目标"
+      },
+      {
+        "id": "match",
+        "type": "semantic-match",
+        "label": "文本条件匹配",
+        "description": "按预设文字条件匹配目标"
+      },
+      {
+        "id": "output",
+        "type": "output",
+        "label": "结果输出",
+        "description": "呈现符合条件的演示目标"
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "analyze"
+      },
+      {
+        "from": "analyze",
+        "to": "match"
+      },
+      {
+        "from": "match",
+        "to": "output"
+      }
+    ]
+  },
+  {
+    "id": "chain-image",
+    "representation": "conceptual-preset",
+    "nodes": [
+      {
+        "id": "input",
+        "type": "input",
+        "label": "视频输入",
+        "description": "使用当前预设视频"
+      },
+      {
+        "id": "preprocess",
+        "type": "preprocess",
+        "label": "抽帧处理",
+        "description": "按任务组织输入画面"
+      },
+      {
+        "id": "detect",
+        "type": "detect",
+        "label": "车辆检测",
+        "description": "定位画面中的车辆"
+      },
+      {
+        "id": "features",
+        "type": "feature-extract",
+        "label": "外观特征",
+        "description": "表示车辆的外观信息"
+      },
+      {
+        "id": "match",
+        "type": "image-match",
+        "label": "相似匹配",
+        "description": "关联与参考图外观相似的演示目标"
+      },
+      {
+        "id": "output",
+        "type": "output",
+        "label": "结果输出",
+        "description": "呈现相似目标，不据此确认唯一身份"
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "preprocess"
+      },
+      {
+        "from": "preprocess",
+        "to": "detect"
+      },
+      {
+        "from": "detect",
+        "to": "features"
+      },
+      {
+        "from": "features",
+        "to": "match"
+      },
+      {
+        "from": "match",
+        "to": "output"
+      }
+    ]
+  }
+]

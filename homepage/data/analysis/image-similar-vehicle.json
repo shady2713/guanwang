@@ -1,0 +1,521 @@
+{
+  "schemaVersion": "1.0",
+  "analysisId": "image-similar-vehicle-v1",
+  "scenarioId": "image",
+  "presetId": "similar-vehicle",
+  "status": "ready",
+  "provenance": {
+    "kind": "authored-demo",
+    "displayLabel": "功能演示",
+    "annotationMethod": "manual-reviewed"
+  },
+  "reviewedAt": "2026-10-09T00:00:00+08:00",
+  "media": {
+    "mediaId": "image-v1",
+    "sha256": "7c129e01036aacb92cee66922b4ec6c55920b7262e0d39d313aba30df549dcaa",
+    "encodedWidth": 1216,
+    "encodedHeight": 672,
+    "durationSec": 10,
+    "timebase": "presentation-seconds",
+    "frameRate": {
+      "numerator": 24,
+      "denominator": 1
+    }
+  },
+  "playbackWindow": {
+    "startSec": 6.0,
+    "endSec": 9.75
+  },
+  "chain": {
+    "id": "chain-image",
+    "representation": "conceptual-preset",
+    "nodes": [
+      {
+        "id": "input",
+        "type": "input",
+        "label": "视频输入",
+        "description": "使用当前预设视频"
+      },
+      {
+        "id": "preprocess",
+        "type": "preprocess",
+        "label": "抽帧处理",
+        "description": "按任务组织输入画面"
+      },
+      {
+        "id": "detect",
+        "type": "detect",
+        "label": "车辆检测",
+        "description": "定位画面中的车辆"
+      },
+      {
+        "id": "features",
+        "type": "feature-extract",
+        "label": "外观特征",
+        "description": "表示车辆的外观信息"
+      },
+      {
+        "id": "match",
+        "type": "image-match",
+        "label": "相似匹配",
+        "description": "关联与参考图外观相似的演示目标"
+      },
+      {
+        "id": "output",
+        "type": "output",
+        "label": "结果输出",
+        "description": "呈现相似目标，不据此确认唯一身份"
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "preprocess"
+      },
+      {
+        "from": "preprocess",
+        "to": "detect"
+      },
+      {
+        "from": "detect",
+        "to": "features"
+      },
+      {
+        "from": "features",
+        "to": "match"
+      },
+      {
+        "from": "match",
+        "to": "output"
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "vehicle-candidate-1",
+      "label": "目标 1",
+      "className": "vehicle",
+      "segments": [
+        {
+          "id": "vehicle-candidate-1-s1",
+          "interval": {
+            "startSec": 6.0,
+            "endSec": 9.76
+          },
+          "interpolation": "linear",
+          "maxInterpolationGapSec": 0.34,
+          "samples": [
+            {
+              "timeSec": 6.0,
+              "box": {
+                "x": 0.60362,
+                "y": 0.7381,
+                "width": 0.10773,
+                "height": 0.17411
+              }
+            },
+            {
+              "timeSec": 6.25,
+              "box": {
+                "x": 0.59704,
+                "y": 0.72024,
+                "width": 0.10362,
+                "height": 0.16369
+              }
+            },
+            {
+              "timeSec": 6.5,
+              "box": {
+                "x": 0.59046,
+                "y": 0.70387,
+                "width": 0.09868,
+                "height": 0.15625
+              }
+            },
+            {
+              "timeSec": 6.75,
+              "box": {
+                "x": 0.58224,
+                "y": 0.68899,
+                "width": 0.09539,
+                "height": 0.14732
+              }
+            },
+            {
+              "timeSec": 7.0,
+              "box": {
+                "x": 0.57401,
+                "y": 0.67113,
+                "width": 0.09128,
+                "height": 0.14286
+              }
+            },
+            {
+              "timeSec": 7.25,
+              "box": {
+                "x": 0.56826,
+                "y": 0.65625,
+                "width": 0.08717,
+                "height": 0.13244
+              }
+            },
+            {
+              "timeSec": 7.5,
+              "box": {
+                "x": 0.56332,
+                "y": 0.63988,
+                "width": 0.0847,
+                "height": 0.12649
+              }
+            },
+            {
+              "timeSec": 7.75,
+              "box": {
+                "x": 0.55921,
+                "y": 0.62798,
+                "width": 0.08306,
+                "height": 0.11905
+              }
+            },
+            {
+              "timeSec": 8.0,
+              "box": {
+                "x": 0.55263,
+                "y": 0.61756,
+                "width": 0.0773,
+                "height": 0.11458
+              }
+            },
+            {
+              "timeSec": 8.25,
+              "box": {
+                "x": 0.54934,
+                "y": 0.60714,
+                "width": 0.07319,
+                "height": 0.10863
+              }
+            },
+            {
+              "timeSec": 8.5,
+              "box": {
+                "x": 0.54359,
+                "y": 0.59821,
+                "width": 0.07237,
+                "height": 0.10417
+              }
+            },
+            {
+              "timeSec": 8.75,
+              "box": {
+                "x": 0.54112,
+                "y": 0.58631,
+                "width": 0.0699,
+                "height": 0.10268
+              }
+            },
+            {
+              "timeSec": 9.0,
+              "box": {
+                "x": 0.53947,
+                "y": 0.57887,
+                "width": 0.07072,
+                "height": 0.09524
+              }
+            },
+            {
+              "timeSec": 9.25,
+              "box": {
+                "x": 0.53783,
+                "y": 0.56994,
+                "width": 0.0699,
+                "height": 0.09077
+              }
+            },
+            {
+              "timeSec": 9.5,
+              "box": {
+                "x": 0.53947,
+                "y": 0.55357,
+                "width": 0.06579,
+                "height": 0.09524
+              }
+            },
+            {
+              "timeSec": 9.75,
+              "box": {
+                "x": 0.53865,
+                "y": 0.55506,
+                "width": 0.06414,
+                "height": 0.08333
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vehicle-candidate-2",
+      "label": "目标 2",
+      "className": "vehicle",
+      "segments": [
+        {
+          "id": "vehicle-candidate-2-s1",
+          "interval": {
+            "startSec": 6.0,
+            "endSec": 9.76
+          },
+          "interpolation": "linear",
+          "maxInterpolationGapSec": 0.34,
+          "samples": [
+            {
+              "timeSec": 6.0,
+              "box": {
+                "x": 0.49424,
+                "y": 0.36905,
+                "width": 0.03125,
+                "height": 0.03423
+              }
+            },
+            {
+              "timeSec": 6.25,
+              "box": {
+                "x": 0.49507,
+                "y": 0.36607,
+                "width": 0.03125,
+                "height": 0.03274
+              }
+            },
+            {
+              "timeSec": 6.5,
+              "box": {
+                "x": 0.49671,
+                "y": 0.3631,
+                "width": 0.03043,
+                "height": 0.03274
+              }
+            },
+            {
+              "timeSec": 6.75,
+              "box": {
+                "x": 0.49753,
+                "y": 0.36161,
+                "width": 0.03043,
+                "height": 0.03274
+              }
+            },
+            {
+              "timeSec": 7.0,
+              "box": {
+                "x": 0.49836,
+                "y": 0.35714,
+                "width": 0.02961,
+                "height": 0.03423
+              }
+            },
+            {
+              "timeSec": 7.25,
+              "box": {
+                "x": 0.49836,
+                "y": 0.35714,
+                "width": 0.03125,
+                "height": 0.03274
+              }
+            },
+            {
+              "timeSec": 7.5,
+              "box": {
+                "x": 0.49918,
+                "y": 0.35417,
+                "width": 0.03043,
+                "height": 0.03423
+              }
+            },
+            {
+              "timeSec": 7.75,
+              "box": {
+                "x": 0.5,
+                "y": 0.35268,
+                "width": 0.03289,
+                "height": 0.03274
+              }
+            },
+            {
+              "timeSec": 8.0,
+              "box": {
+                "x": 0.50082,
+                "y": 0.35417,
+                "width": 0.03454,
+                "height": 0.03274
+              }
+            },
+            {
+              "timeSec": 8.25,
+              "box": {
+                "x": 0.50164,
+                "y": 0.35268,
+                "width": 0.03372,
+                "height": 0.03125
+              }
+            },
+            {
+              "timeSec": 8.5,
+              "box": {
+                "x": 0.50164,
+                "y": 0.35268,
+                "width": 0.03043,
+                "height": 0.02976
+              }
+            },
+            {
+              "timeSec": 8.75,
+              "box": {
+                "x": 0.50329,
+                "y": 0.35268,
+                "width": 0.02961,
+                "height": 0.02976
+              }
+            },
+            {
+              "timeSec": 9.0,
+              "box": {
+                "x": 0.50411,
+                "y": 0.35119,
+                "width": 0.02878,
+                "height": 0.02976
+              }
+            },
+            {
+              "timeSec": 9.25,
+              "box": {
+                "x": 0.50576,
+                "y": 0.35119,
+                "width": 0.02961,
+                "height": 0.02827
+              }
+            },
+            {
+              "timeSec": 9.5,
+              "box": {
+                "x": 0.50658,
+                "y": 0.3497,
+                "width": 0.02961,
+                "height": 0.02827
+              }
+            },
+            {
+              "timeSec": 9.75,
+              "box": {
+                "x": 0.5074,
+                "y": 0.34821,
+                "width": 0.02961,
+                "height": 0.03125
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rois": [],
+  "rules": [],
+  "events": [
+    {
+      "id": "ev-similar-1",
+      "mediaId": "image-v1",
+      "kind": "similar-target-found",
+      "timeSec": 7.0,
+      "visible": {
+        "startSec": 7.0,
+        "endSec": 9.75
+      },
+      "trackIds": [
+        "vehicle-candidate-1"
+      ],
+      "title": "找到外观相似目标",
+      "evidenceIds": [
+        "ev-similar-1-shot"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-similar-1-shot",
+      "mediaId": "image-v1",
+      "timeSec": 7.0,
+      "imageUrl": "media/reference-vehicle.jpg",
+      "extractedFromMedia": true
+    }
+  ],
+  "cues": [
+    {
+      "id": "c-ref",
+      "range": {
+        "startSec": 6.0,
+        "endSec": 6.4
+      },
+      "kind": "reference-reveal",
+      "targetId": "vehicle-candidate-2",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-input",
+      "range": {
+        "startSec": 6.0,
+        "endSec": 6.6
+      },
+      "kind": "node-emphasis",
+      "targetId": "input",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-preprocess",
+      "range": {
+        "startSec": 6.65,
+        "endSec": 7.25
+      },
+      "kind": "node-emphasis",
+      "targetId": "preprocess",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-detect",
+      "range": {
+        "startSec": 7.3,
+        "endSec": 7.9
+      },
+      "kind": "node-emphasis",
+      "targetId": "detect",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-features",
+      "range": {
+        "startSec": 7.95,
+        "endSec": 8.55
+      },
+      "kind": "node-emphasis",
+      "targetId": "features",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-match",
+      "range": {
+        "startSec": 8.6,
+        "endSec": 9.2
+      },
+      "kind": "node-emphasis",
+      "targetId": "match",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-output",
+      "range": {
+        "startSec": 9.25,
+        "endSec": 9.75
+      },
+      "kind": "node-emphasis",
+      "targetId": "output",
+      "purpose": "explanation"
+    }
+  ]
+}

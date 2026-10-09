@@ -1,0 +1,12 @@
+{
+  "name": "井盖雨水箅缺损识别",
+  "type": "generated-scenario-illustration",
+  "mode": "built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: landscape photographic scenario illustration for a bright modern Chinese visual-understanding website, around 1000 by 680 pixels, approximately 3:2 composition. Primary request: a candid natural observation photograph of a city roadside stormwater drain grate with a visibly damaged or missing small section. Scene: gray asphalt road meeting a light gray stone curb and a neatly paved sidewalk in a modern Chinese city, tight local view with recognizable physical scale. Subject: a believable rectangular cast-iron stormwater grate about 60 by 40 centimeters lying flush with the roadside gutter, with one small broken portion of the bars and a slight offset exposing a shallow dark drain recess underneath. The grate and its defect should be easy to see, near the center of the photo, without exaggerating the hole. Composition: oblique downward medium-close view from about two meters above the curb, sufficient pavement context for responsive cropping. Materials: realistic coarse asphalt aggregate, naturally aged cast iron, dusty concrete curb and subtle small debris; ordinary natural surface wear. Lighting: clear natural daytime illumination, neutral photographic colors, soft modest shadows, unstaged municipal inspection photography, not CGI or cinematic. Constraints: no dangerous person, no enormous deep hole, no traffic cone needed, no UI, no detection bounding boxes, no text, no logos, no brand marks, no watermark. The scene is illustrative and is not an actual AI model output.",
+  "original_path": "C:\\Users\\64576\\.codex\\generated_images\\01a1162f-1c16-7c42-9642-21b417dcc9d2\\exec-8bf14d3a-25b8-40ce-a1ba-e27084e0443f.png",
+  "output_path": "C:/Users/64576/Desktop/视界/website/dist/assets/scenarios/manhole.png",
+  "width": 1521,
+  "height": 1034,
+  "sha256": "50DB7B28BA9C4236EE4D3CDD877C248D7B2668531DEF38CD991B7F378F3AC871",
+  "limitations": "AI生成的场景示意照片，不是实际模型检测结果；保留原生尺寸，无UI、检测框或人工文字叠加。"
+}

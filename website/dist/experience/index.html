@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0866ff">
+    <meta name="description" content="体验视界 AIMaster 算法链，查看从目标识别到区域进入判断与事件证据的过程。">
+    <title>交互体验 · 视界 AIMaster</title>
+    <link rel="icon" href="/assets/scenarios/icons/focus-centered.svg">
+    <link rel="preload" as="image" href="/assets/scenarios/city-panorama.webp">
+    <link rel="stylesheet" href="/scenarios/scenarios.css">
+    <link rel="stylesheet" href="/experience/experience.css">
+    <script type="module" src="/experience/experience.mjs"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳转到主要内容</a>
+    <header class="site-header" id="site-header"></header>
+    <main id="main">
+      <section class="hero landing-hero" aria-labelledby="landing-title">
+        <img class="city-image" src="/assets/scenarios/city-panorama.webp" width="2086" height="754" alt="明亮的城市天际线、道路与湖岸" fetchpriority="high">
+        <div class="shell hero-copy landing-copy">
+          <p class="hero-kicker">视界 AIMaster</p>
+          <h1 id="landing-title">不止于识别，<br>更在于理解</h1>
+          <p class="hero-subtitle">面向无人机巡检与视频分析的视觉理解平台</p>
+          <p class="hero-description">从画面中的目标，到业务关注的事件。<br>亲自体验算法链如何连接识别与判断。</p>
+          <div class="hero-actions"><button class="button primary" id="begin-experience" type="button">开始巡查体验 <img class="icon white-icon" src="/assets/scenarios/icons/arrow-right.svg" width="20" height="20" alt=""></button><a class="hero-secondary" href="/demo/">预约演示</a></div>
+          <small class="hero-disclaimer">场景示意 · 预设素材交互演示</small>
+        </div>
+        <img class="hero-drone" src="/assets/experience/drone.png" width="768" height="512" alt="用于说明无人机影像采集场景的四旋翼无人机">
+      </section>
+
+      <section class="experience shell" id="capabilities" aria-labelledby="experience-title">
+        <div class="experience-heading"><div><p class="eyebrow">AIMasterflow</p><h2 id="experience-title" tabindex="-1">让识别，形成有依据的判断</h2><p>同一段巡查画面，选择任务、查看算法链，并回看事件证据。</p></div><button type="button" class="text-button return-intro" id="return-intro" hidden>返回首屏 <img class="icon" src="/assets/scenarios/icons/arrow-left.svg" alt="" width="20" height="20"></button></div>
+        <div class="task-tabs" role="tablist" aria-label="选择任务方式">
+          <button type="button" id="task-industry" role="tab" aria-selected="true" aria-controls="task-panel"><img class="icon blue-icon" src="/assets/scenarios/icons/category.svg" alt="" width="24" height="24"><span><strong>行业场景</strong><small>按业务配置对象与条件</small></span></button>
+          <button type="button" id="task-language" role="tab" aria-selected="false" aria-controls="task-panel" tabindex="-1"><img class="icon" src="/assets/scenarios/icons/message-circle.svg" alt="" width="24" height="24"><span><strong>自然语言</strong><small>用文字描述查找目标</small></span></button>
+          <button type="button" id="task-image" role="tab" aria-selected="false" aria-controls="task-panel" tabindex="-1"><img class="icon" src="/assets/scenarios/icons/photo-search.svg" alt="" width="24" height="24"><span><strong>以图搜图</strong><small>用参考图查找相似目标</small></span></button>
+        </div>
+        <div class="task-panel" id="task-panel" role="tabpanel" aria-labelledby="task-industry">
+          <div id="industry-controls" class="industry-controls"><span class="task-label">演示任务</span><strong>车辆进入指定区域</strong><div class="judgement-choice"><button type="button" id="detection-only" aria-pressed="false">仅看目标识别</button><button type="button" id="event-judgement" aria-pressed="true">加入事件判断</button></div></div>
+          <form class="language-controls" id="language-controls" hidden><label for="demo-query">描述目标</label><input id="demo-query" name="query" value="查找白色车辆" maxlength="80" autocomplete="off" aria-describedby="query-hint"><button type="submit" class="button primary">运行示例</button><p id="query-hint">本样片仅演示“查找白色车辆”。</p></form>
+          <div class="image-controls" id="image-controls" hidden><img src="/assets/experience/vehicle-white.png" width="512" height="512" alt="示例参考图：白色车辆"><div><strong>白色车辆 · 示例参考图</strong><p>在预设巡查画面中展示相似目标检索。</p></div><button type="button" class="button outline" id="run-image-demo">使用示例图片</button></div>
+        </div>
+
+        <div class="workbench">
+          <div class="scene-column">
+            <div class="scene-stage" id="scene-stage" data-mode="industry" aria-label="固定视角的巡查演示画面">
+              <img class="road-image" id="road-image" src="/assets/experience/road-empty.webp" width="1672" height="941" alt="固定俯视角的滨水道路演示背景">
+              <div class="scene-caption"><span>区域进入 · 演示示意</span><small id="scene-method">对象：车辆　条件：由外向内</small></div>
+              <div class="attention-region" id="attention-region" aria-hidden="true"></div>
+              <button class="region-handle" id="region-handle" type="button" aria-label="移动关注区域，使用方向键调整，Home复位"><img src="/assets/scenarios/icons/grip-vertical.svg" class="icon" width="18" height="18" alt=""><span>关注区域</span></button>
+              <img class="demo-vehicle" id="demo-vehicle" src="/assets/experience/vehicle-white.png" width="512" height="512" alt="沿道路移动的同一辆模拟白色车辆">
+              <div class="target-box" id="target-box" aria-hidden="true"><span>车辆 01</span></div>
+              <div class="scene-bottom"><span class="scene-state" id="scene-state">准备就绪</span><span>预设素材 · 交互模拟</span></div>
+            </div>
+            <div class="player-toolbar">
+              <button type="button" class="round-control" id="play-pause" aria-label="播放巡查演示"><img class="icon white-icon" src="/assets/scenarios/icons/player-play.svg" width="22" height="22" alt=""></button>
+              <button type="button" class="plain-control" id="reset-playback" aria-label="从头回放"><img class="icon" src="/assets/scenarios/icons/rotate-2.svg" width="20" height="20" alt=""></button>
+              <label class="sr-only" for="playback-position">巡查回放位置</label><input id="playback-position" type="range" min="0" max="12000" step="100" value="0" aria-valuetext="0秒，共12秒">
+              <output id="playback-time" for="playback-position">00:00 / 00:12</output>
+            </div>
+            <div class="scene-instructions"><p id="interaction-hint">播放演示，或拖动关注区域，查看进入条件如何影响结果。</p><button class="text-button" id="reset-region" type="button">区域复位</button></div>
+          </div>
+
+          <aside class="chain-column" aria-labelledby="chain-heading">
+            <div class="chain-heading"><div><span class="eyebrow">可配置的 AI 识别算法链</span><h3 id="chain-heading">从画面到事件</h3></div><span class="chain-badge">演示链</span></div>
+            <ol class="node-list" id="node-list" aria-label="查看算法节点">
+              <li><button class="chain-node" data-node="input" type="button" aria-pressed="false"><img class="icon blue-icon" src="/assets/scenarios/icons/video.svg" width="22" height="22" alt=""><strong>视频输入</strong><span>01</span></button></li>
+              <li><button class="chain-node" data-node="frames" type="button" aria-pressed="false"><img class="icon blue-icon" src="/assets/scenarios/icons/stack-2.svg" width="22" height="22" alt=""><strong>抽帧处理</strong><span>02</span></button></li>
+              <li><button class="chain-node" data-node="detection" type="button" aria-pressed="false"><img class="icon blue-icon" src="/assets/scenarios/icons/scan.svg" width="22" height="22" alt=""><strong>车辆检测</strong><span>03</span></button></li>
+              <li><button class="chain-node" data-node="tracking" type="button" aria-pressed="false"><img class="icon blue-icon" src="/assets/scenarios/icons/route.svg" width="22" height="22" alt=""><strong>目标跟踪</strong><span>04</span></button></li>
+              <li><button class="chain-node" data-node="condition" type="button" aria-pressed="true"><img class="icon blue-icon" src="/assets/scenarios/icons/focus-centered.svg" width="22" height="22" alt=""><strong>进入条件判断</strong><span>05</span></button></li>
+              <li><button class="chain-node" data-node="output" type="button" aria-pressed="false"><img class="icon blue-icon" src="/assets/scenarios/icons/file-check.svg" width="22" height="22" alt=""><strong>事件输出</strong><span>06</span></button></li>
+            </ol>
+            <div class="node-inspector" id="node-inspector"><strong id="node-title">进入条件判断</strong><p id="node-description">结合指定区域，判断同一车辆是否由区域外进入区域内。</p></div>
+            <div class="result-preview" id="result-preview" data-result="waiting"><span id="result-eyebrow">分析结果</span><strong id="result-title">等待车辆进入</strong><p id="result-description">播放后查看位置变化与判断依据。</p><button class="detail-link" id="show-evidence" type="button" disabled>查看事件证据 <img class="icon blue-icon" src="/assets/scenarios/icons/arrow-right.svg" width="20" height="20" alt=""></button></div>
+          </aside>
+        </div>
+        <p class="experience-note">交互样片使用预设位置与规则模拟结果，尚未接入真实 AI 分析或飞行控制。</p>
+        <p class="sr-only" id="demo-status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="sample-followup shell" aria-labelledby="followup-title"><div><h2 id="followup-title">把理解，带入实际业务</h2><p>按行业或识别对象，进一步了解场景用途与适用条件。</p></div><a class="detail-link" href="/scenarios/">浏览全部应用场景 <img class="icon blue-icon" src="/assets/scenarios/icons/arrow-right.svg" width="20" height="20" alt=""></a></section>
+      <div id="conversion"></div>
+    </main>
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <dialog id="evidence-dialog" class="evidence-dialog" aria-labelledby="evidence-title">
+      <div class="evidence-header"><div><span class="eyebrow">同一车辆 · 连续过程的可视摘要</span><h2 id="evidence-title">区域进入事件证据</h2></div><button class="plain-control" type="button" id="close-evidence" aria-label="关闭事件证据"><img class="icon" src="/assets/scenarios/icons/x.svg" width="24" height="24" alt=""></button></div>
+      <p class="evidence-subtitle">来源：预设巡查样片 · 演示车辆 01</p>
+      <div class="evidence-grid"><figure><canvas id="evidence-before" width="836" height="470" role="img" aria-label="进入前：同一模拟车辆位于关注区域外"></canvas><figcaption><strong>进入前 · 区域外</strong><span id="before-time"></span></figcaption></figure><figure><canvas id="evidence-after" width="836" height="470" role="img" aria-label="进入后：同一模拟车辆位于关注区域内"></canvas><figcaption><strong>进入后 · 区域内</strong><span id="after-time"></span></figcaption></figure></div>
+      <div class="evidence-actions"><button type="button" class="button outline" id="replay-event">回放进入过程</button><a class="button primary" href="/demo/">预约产品演示</a></div>
+      <p class="evidence-note">以上为本交互样片生成的演示画面与结果，不是实际产品识别测试。</p>
+    </dialog>
+    <noscript><p class="shell">请启用 JavaScript 体验任务切换、算法链与回放操作。也可浏览<a href="/scenarios/">应用场景</a>或前往<a href="/demo/">预约演示</a>。</p></noscript>
+  </body>
+</html>

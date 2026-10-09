@@ -1,0 +1,17 @@
+{
+  "asset": "street-market.png",
+  "use": "摊贩及店外经营识别：场景示意照片",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: a landscape scenario photograph for the application-scenarios page of a modern Chinese visual-inspection technology website. Generate ONLY a realistic, candid editorial photograph, approximately 1000×680 landscape aspect ratio. Scene: a bright, tidy, modern Chinese city street with ground-floor shops, wide stone-paved pedestrian space, leafy roadside trees and a few contemporary apartment/building facades farther back. Subject: two or three small informal sidewalk stalls under naturally faded red and blue canopy umbrellas, selling ordinary produce or clothes, arranged along the storefront edge; several small distant pedestrians. Camera: oblique medium-wide street-level perspective along the pavement, about shoulder height, natural 35mm photography, believable perspective and irregular everyday details, similar to a municipal field-survey photograph but attractive for a website. Lighting: clear pleasant daylight, soft tree shadows, bright whites and natural greens, no excessive saturation. People remain small and faces are not individually recognizable. Preserve generous clear pedestrian space. No legible shop brands or readable signs. No detection boxes, no user interface, no diagrams, no text overlays, no watermark, no science-fiction glow, no overly perfect repetitive geometry, no CGI or illustration appearance.",
+  "source_path": "C:\\Users\\64576\\.codex\\generated_images\\01a1162f-6758-7850-baae-9b6545d9faf8\\exec-adda5b9d-0f15-48a3-a960-c968b2508a16.png",
+  "output_path": "C:\\Users\\64576\\Desktop\\视界\\website\\dist\\assets\\scenarios\\street-market.png",
+  "width": 1520,
+  "height": 1035,
+  "sha256": "C1D9797C17AFE344D5A531684B9747658ECAB5AFAAE4F037359AA8D568473407",
+  "verification": "已目视检查：红蓝棚伞、沿街摊位、宽阔步行空间与树木；无检测框、UI、文字叠层或水印。源图与项目图 SHA256 一致。",
+  "limitations": [
+    "AI 生成的场景示意照片，非真实客户巡查记录或算法实测结果。",
+    "实际尺寸为 1520×1035，保留 native 输出，可由网页 CSS 裁切；未做图片编辑。",
+    "店铺中存在小尺寸模糊装饰/商品印刷内容，未呈现清晰品牌；人数不保证严格只有两三人。"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0",
+  "colors": {
+    "background": "#FFFFFF",
+    "surface": "#F4F8FF",
+    "heading": "#101A3A",
+    "body": "#34445F",
+    "muted": "#52647E",
+    "brand": "#0066FF",
+    "button": "#0052CC",
+    "border": "#DCE6F3",
+    "success": "#087F5B",
+    "notice": "#9A5B00"
+  },
+  "layout": {
+    "contentMaxPx": 1440,
+    "breakpointsPx": [
+      320,
+      375,
+      768,
+      1024,
+      1440,
+      1920
+    ],
+    "mobileTouchTargetMinPx": 44
+  },
+  "type": {
+    "heroDesktopPx": [
+      56,
+      72
+    ],
+    "heroMobilePx": [
+      34,
+      40
+    ],
+    "headingDesktopPx": [
+      36,
+      44
+    ],
+    "headingMobilePx": [
+      26,
+      30
+    ],
+    "bodyPx": [
+      16,
+      18
+    ],
+    "controlPx": [
+      14,
+      16
+    ],
+    "secondaryMinPx": 12
+  },
+  "radiiPx": {
+    "stageDesktop": 16,
+    "stageMobile": 10,
+    "button": 8
+  },
+  "motion": {
+    "enterEasing": "cubic-bezier(0.22, 1, 0.36, 1)",
+    "heroEnterMs": 480,
+    "tabTransitionMs": 200,
+    "nodeTransitionMs": 240,
+    "reducedMotion": "no-autoplay-no-nonessential-motion"
+  }
+}

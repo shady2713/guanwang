@@ -1,0 +1,17 @@
+{
+  "asset": "fire-access.png",
+  "use": "车辆占用通道与车牌识别：城市治理视图消防通道占用线索示意",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: scenario photograph for the fire-access obstruction example on the City Governance view of a modern Chinese technology website. Generate ONLY a realistic photographic scene, approximately 1000×680 landscape aspect ratio. Scene: the driveway and entrance of a modern Chinese office building, attractive trees and contemporary light stone facade, a designated emergency/fire access lane immediately in front of the entrance, with believable yellow diagonal cross-hatched keep-clear markings on gray asphalt. Subject: exactly one ordinary dark silver passenger car is parked across the middle of the yellow cross-hatched lane, visibly obstructing the driveway passage. The yellow grid and curb geometry clearly explain the obstruction without written claims. Camera: oblique slightly elevated view, looking down at the vehicle and street markings from a first-floor height, medium-wide framing. Realistic car dimensions, tire placement and perspective; natural ordinary architectural details. Lighting: bright natural daytime, soft realistic shadows, pleasant clean photography, no excessive saturation or polished CGI effect. License plate is blurred and unreadable. Ground lettering is unnecessary: just natural yellow grid markings. No UI, no detection rectangles, no text overlays, no date or time stamp, no watermark, no readable number plates, no readable brands, no close-up faces, no science-fiction effects.",
+  "source_path": "C:\\Users\\64576\\.codex\\generated_images\\01a1162f-6758-7850-baae-9b6545d9faf8\\exec-036b6b21-fdfb-4e7d-bd12-01b4c50b6c48.png",
+  "output_path": "C:\\Users\\64576\\Desktop\\视界\\website\\dist\\assets\\scenarios\\fire-access.png",
+  "width": 1520,
+  "height": 1035,
+  "sha256": "9F31C083AE8E724A8A3806740062751CD47352B152D22ABBF8A8FD4E045140B5",
+  "verification": "已目视检查：现代办公建筑入口、黄色网格禁停区域内一辆灰色轿车；车牌模糊不可读，无检测框、UI、文字叠层、时间戳或水印。源图与项目图 SHA256 一致。",
+  "limitations": [
+    "AI 生成场景示意，非真实客户巡查记录或算法识别输出。",
+    "黄色网格用于表现通道占用线索，画面不证明实际场地消防通道的法律属性。",
+    "实际尺寸 1520×1035，保留 native 输出，未做图片编辑。"
+  ]
+}

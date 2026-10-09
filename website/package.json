@@ -1,0 +1,14 @@
+{
+  "name": "shijie-aimaster-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "视界 AIMaster 官网静态原型",
+  "scripts": {
+    "start": "node serve.mjs",
+    "dev": "node serve.mjs",
+    "check": "node checks/syntax-check.mjs",
+    "test:scenarios": "node --test checks/scenarios.test.mjs",
+    "test:experience": "node --test checks/experience.test.mjs",
+    "prepare:scenarios": "node scripts/prepare-scenario-data.mjs"
+  }
+}

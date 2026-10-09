@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "locale": "zh-CN",
+  "brand": "视界 AIMaster",
+  "hero": {
+    "title": [
+      "不止于识别，",
+      "更在于理解"
+    ],
+    "subtitle": "面向无人机巡检与视频分析的视觉理解平台",
+    "primaryCta": {
+      "label": "探索产品能力",
+      "href": "#capabilities"
+    }
+  },
+  "tasks": [
+    {
+      "id": "industry",
+      "label": "行业场景",
+      "summary": "按任务配置目标与条件"
+    },
+    {
+      "id": "language",
+      "label": "自然语言",
+      "summary": "用文字描述关注目标"
+    },
+    {
+      "id": "image",
+      "label": "以图搜图",
+      "summary": "用参考图片查找相似目标"
+    }
+  ]
+}

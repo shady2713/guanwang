@@ -1,0 +1,12 @@
+{
+  "name": "设备管线相关场景示意",
+  "type": "generated-scenario-illustration",
+  "mode": "built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: landscape photographic equipment-and-lines scenario illustration for a bright Chinese AI visual-understanding website, approximately 1000 by 680 pixels, roughly 3:2 framing. Primary request: a real-world documentary-style natural photograph of suburban Chinese electricity transmission facilities in clear daytime light. Scene: one ordinary steel lattice transmission tower and several realistically arranged high-voltage conductor lines crossing a green suburban landscape, with a modest compact fenced electrical facility or equipment area near the tower base. Mid-to-distant inspection viewpoint from a slight elevation; preserve visible tower geometry, insulators, suspended lines, and surrounding ordinary infrastructure without exotic machinery. Composition: tower located in central frame with sufficient surrounding scene context for responsive cropping, no overly wide distant panorama that makes equipment unrecognizable. Materials: believable galvanized steel, porcelain or composite insulators, clear natural grass and shrubs, ordinary concrete facilities. Lighting: bright neutral natural daylight, mild clouds and blue sky, realistic shadows and true-to-life colors, no cinematic color grading, no CGI. Constraints: no indicated fault, no broken equipment, no thermal or false-color radiation visualization, no detection boxes, no UI, no labels, no visible text or branding, no watermarks, no fantastical electrical effects. This is only an illustrative equipment scene and does not represent measured inspection or fault-recognition results.",
+  "original_path": "C:\\Users\\64576\\.codex\\generated_images\\01a1162f-1c16-7c42-9642-21b417dcc9d2\\exec-8f5860ec-7b55-45be-be9e-56c560807df6.png",
+  "output_path": "C:/Users/64576/Desktop/视界/website/dist/assets/scenarios/equipment-scene.png",
+  "width": 1520,
+  "height": 1035,
+  "sha256": "7B3ABC7461FF1CF5AB3A1B8FF378A9956F1C0738BC39C9D16FFCC06EDA070BF1",
+  "limitations": "AI生成的通用设备设施场景示意照片，不代表设备故障实测或热成像结果；保留原生尺寸，无故障标注、热伪彩图、UI、检测框或人工文字叠加。"
+}

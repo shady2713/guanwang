@@ -1,0 +1,101 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "mediaId": "industry-v1",
+    "scenarioId": "industry",
+    "sourceFilename": "01_行业场景_动作样片.mp4",
+    "bytes": 7234819,
+    "sha256": "75a14723f494ceffb8613d87930167b852ee53642e0c7b8fc5df9bea5990a0a5",
+    "encodedWidth": 1264,
+    "encodedHeight": 640,
+    "durationSec": 10.0,
+    "timebase": "presentation-seconds",
+    "frameRate": {
+      "numerator": 24,
+      "denominator": 1
+    },
+    "encodedTimeBase": {
+      "numerator": 1,
+      "denominator": 12288
+    },
+    "sources": [
+      {
+        "url": "assets/video/industry.mp4",
+        "mime": "video/mp4"
+      }
+    ],
+    "posterUrl": "assets/posters/industry.jpg",
+    "provenance": {
+      "kind": "user-provided-ai-generated",
+      "displayLabel": "AI 生成场景 · 功能演示",
+      "generator": "MiniMax H3"
+    },
+    "deliveryState": "original-available"
+  },
+  {
+    "schemaVersion": "1.0",
+    "mediaId": "language-v1",
+    "scenarioId": "language",
+    "sourceFilename": "02_自然语言_动作样片.mp4",
+    "bytes": 32206654,
+    "sha256": "bbb4217ab455d43637ddf556efc8762fb9e3647b403d7ea833792198a5106a66",
+    "encodedWidth": 1280,
+    "encodedHeight": 720,
+    "durationSec": 10.0,
+    "timebase": "presentation-seconds",
+    "frameRate": {
+      "numerator": 24,
+      "denominator": 1
+    },
+    "encodedTimeBase": {
+      "numerator": 1,
+      "denominator": 12288
+    },
+    "sources": [
+      {
+        "url": "assets/video/language.mp4",
+        "mime": "video/mp4"
+      }
+    ],
+    "posterUrl": "assets/posters/language.jpg",
+    "provenance": {
+      "kind": "user-provided-ai-generated",
+      "displayLabel": "AI 生成场景 · 功能演示",
+      "generator": "MiniMax H3"
+    },
+    "deliveryState": "original-available"
+  },
+  {
+    "schemaVersion": "1.0",
+    "mediaId": "image-v1",
+    "scenarioId": "image",
+    "sourceFilename": "03_以图搜图_动作样片.mp4",
+    "bytes": 8252217,
+    "sha256": "7c129e01036aacb92cee66922b4ec6c55920b7262e0d39d313aba30df549dcaa",
+    "encodedWidth": 1216,
+    "encodedHeight": 672,
+    "durationSec": 10.0,
+    "timebase": "presentation-seconds",
+    "frameRate": {
+      "numerator": 24,
+      "denominator": 1
+    },
+    "encodedTimeBase": {
+      "numerator": 1,
+      "denominator": 12288
+    },
+    "sources": [
+      {
+        "url": "assets/video/image-search.mp4",
+        "mime": "video/mp4"
+      }
+    ],
+    "posterUrl": "assets/posters/image-search.jpg",
+    "provenance": {
+      "kind": "user-provided-ai-generated",
+      "displayLabel": "AI 生成场景 · 功能演示",
+      "generator": "MiniMax H3"
+    },
+    "deliveryState": "original-available"
+  }
+]

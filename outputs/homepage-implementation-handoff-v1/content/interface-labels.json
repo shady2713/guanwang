@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0",
+  "navigation": [
+    {
+      "label": "产品能力",
+      "href": "#capabilities"
+    },
+    {
+      "label": "应用场景",
+      "href": "#applications"
+    },
+    {
+      "label": "部署与集成",
+      "href": "#integration"
+    },
+    {
+      "label": "资源与支持",
+      "href": "#resources"
+    }
+  ],
+  "capabilities": {
+    "eyebrow": "AIMasterflow",
+    "title": "可配置的 AI 识别算法链",
+    "benefits": [
+      "模型可选",
+      "规则可配",
+      "节点可复用"
+    ],
+    "displayModes": [
+      {
+        "id": "analysis",
+        "label": "分析效果"
+      },
+      {
+        "id": "raw",
+        "label": "原始画面"
+      },
+      {
+        "id": "compare",
+        "label": "对照"
+      }
+    ]
+  },
+  "sections": {
+    "smallTargets": {
+      "title": "航拍小目标，保留更多识别细节",
+      "cta": "查看分析流程"
+    },
+    "applications": {
+      "title": "面向实际巡查任务",
+      "categories": [
+        "交通巡查",
+        "城市管理",
+        "水务巡查",
+        "工地安全"
+      ]
+    },
+    "integration": {
+      "title": "融入现有业务系统",
+      "summary": "私有化部署 · API 集成"
+    },
+    "cta": {
+      "title": "预约产品演示",
+      "button": "预约演示",
+      "href": "demo/"
+    }
+  },
+  "staticNotice": "功能演示",
+  "leadNotice": "当前为页面预览，预约提交尚未开放",
+  "heroMediaStatus": "clean-background-required"
+}

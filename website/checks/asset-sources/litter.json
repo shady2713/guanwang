@@ -1,0 +1,12 @@
+{
+  "name": "垃圾杂物识别",
+  "type": "generated-scenario-illustration",
+  "mode": "built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: a landscape photographic scenario illustration for a bright modern Chinese AI visual understanding website, approximately 1000 by 680 pixels, wide 3:2 composition. Primary request: a candid natural observation photograph of a modern Chinese city tree-lined sidewalk, showing a small amount of scattered litter next to a tree pit: two discarded paper cups, a crumpled translucent plastic bag, a few food wrappers and small ordinary miscellaneous litter. Composition: oblique downward medium-close view from about 2 to 3 meters above the sidewalk, recognizable pavement and tree-pit context, no people needed. Materials: authentic gray sidewalk pavers with visible fine texture, slightly worn curb, realistic mature tree bark, believable paper and plastic textures. Lighting: natural clear daylight with soft leaf shadows, bright calm real-world atmosphere, neutral photographic color, no dramatic cinematic grading. Keep the main litter subjects in central lower-middle area, enough context around them for responsive website cropping. This must look like an unstaged real camera photograph, not an advertisement, not CGI. No UI, no labels, no detection bounding boxes, no text, no watermark, no trash mountain, no exaggerated environmental disaster. The image is an illustrative scene, not an actual AI model output.",
+  "original_path": "C:\\Users\\64576\\.codex\\generated_images\\01a1162f-1c16-7c42-9642-21b417dcc9d2\\exec-6c8be23a-e24d-4668-b6d8-458ffcc4138e.png",
+  "output_path": "C:/Users/64576/Desktop/视界/website/dist/assets/scenarios/litter.png",
+  "width": 1519,
+  "height": 1035,
+  "sha256": "86C41235CFCAA0AFC18B8ABCABA044935C9FD40AFCD0CC6B2CEFC15B3E323C52",
+  "limitations": "AI生成的场景示意照片，不是实际模型检测结果；保留原生尺寸，无UI、检测框或人工文字叠加。"
+}

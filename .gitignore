@@ -1,0 +1,53 @@
+# Root allowlist: private source documents and unrelated projects stay local.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/docs/
+!/homepage/
+!/website/
+!/runtime/
+!/outputs/
+
+# Keep the current handoff, selected designs and scenario-generation input.
+/outputs/*
+!/outputs/homepage-implementation-handoff-v1/
+!/outputs/homepage-design-v9/
+!/outputs/application-scenarios-design-v4/
+!/outputs/application-scenarios-design-v2/
+/outputs/application-scenarios-design-v2/*
+!/outputs/application-scenarios-design-v2/website-scene-content.json
+
+# Preserve calibration inputs and tools, but exclude private transcripts.
+/runtime/*
+!/runtime/tools/
+!/runtime/calib/
+!/runtime/e2e/
+/runtime/calib/**/*.png
+/runtime/calib/**/*.jpg
+/runtime/calib/**/*.jpeg
+/runtime/e2e/shots/*.png
+/runtime/e2e/shots/*.jpg
+
+# website/dist contains authored source. Never ignore all dist directories.
+/homepage/dist/
+/website/checks/**/*.png
+/website/aimaster-static.zip
+/website/checks/request-draft-test.txt
+
+**/node_modules/
+**/.playwright-cli/
+**/.playwright-mcp/
+**/playwright-report/
+**/test-results/
+**/__pycache__/
+**/*.pyc
+**/*.tsbuildinfo
+**/*.log
+**/.DS_Store
+**/Thumbs.db
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.sample
+

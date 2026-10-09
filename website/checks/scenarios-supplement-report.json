@@ -1,0 +1,11 @@
+{
+  "passed": 5,
+  "environment": "Chromium; phone viewport 390x844, deviceScaleFactor=2, isMobile=true, hasTouch=true; separate JavaScript-disabled context",
+  "results": [
+    "390px手机触控布局无横向溢出",
+    "触屏导航展开",
+    "触屏分类切换",
+    "JavaScript禁用时提交按钮停用",
+    "JavaScript禁用时Enter不发请求"
+  ]
+}

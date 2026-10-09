@@ -1,0 +1,12 @@
+{
+  "name": "绿化植被区域分割",
+  "type": "generated-scenario-illustration",
+  "mode": "built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: landscape photographic scenario illustration for a bright modern Chinese AI visual-understanding website, around 1000 by 680 pixels, approximately 3:2 composition. Primary request: a naturally observed photograph of a landscaped greenery strip beside a modern Chinese city road and pedestrian walkway. Scene: a continuous clean gray pedestrian path on the left, a broad patch of natural green lawn and low dense shrubs in the center, several realistically spaced mature leafy street trees, light gray curbs separating the plant area from walkway and road. Show clearly identifiable vegetation boundaries and different plant textures. Composition: slightly elevated oblique downward medium view from about 4 meters above ground, enough context to understand the urban layout, not a full aerial city view. Vegetation covers most of the central frame, with curved or straight realistic landscaping edges clearly visible. A few modern city buildings may appear softly in the distant background but avoid dominating the view. Lighting: bright natural daytime light, soft modest leaf shadows, true-to-life green and gray colors, documentary photography with real material textures, no HDR look, no CGI or stylized rendering. Constraints: no colored segmentation mask, no green overlay, no detection boxes, no labels, no UI, no visible text, no watermark, no logos, no dramatic science-fiction elements. This is a photographic scene illustration, not an actual AI segmentation output.",
+  "original_path": "C:\\Users\\64576\\.codex\\generated_images\\01a1162f-1c16-7c42-9642-21b417dcc9d2\\exec-1186af23-e090-4387-9c14-256a7a7702b5.png",
+  "output_path": "C:/Users/64576/Desktop/视界/website/dist/assets/scenarios/urban-greenery.png",
+  "width": 1519,
+  "height": 1035,
+  "sha256": "49DC1ABA5E2C7EF0DF15E3557ABC9A8CB0A32DE145BCDCE38FB0D6511CA7781B",
+  "limitations": "AI生成的场景示意照片，不是实际模型分割结果；保留原生尺寸，无分割mask、UI、检测框或人工文字叠加。"
+}

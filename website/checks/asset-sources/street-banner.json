@@ -1,0 +1,11 @@
+{
+  "asset_type": "photorealistic-natural",
+  "tool": "built-in image_gen",
+  "native_source": "C:\\Users\\64576\\.codex\\generated_images\\01a1162e-cea8-73d3-8c03-b46d00d35767\\exec-e2fabf71-a0e3-46fa-b65f-de0a18b84b7f.png",
+  "output_path": "C:\\Users\\64576\\Desktop\\视界\\website\\dist\\assets\\scenarios\\street-banner.png",
+  "width": 1520,
+  "height": 1035,
+  "sha256": "F0D2690D3AA8CE416D3C737B579EFF2C70ED816AE8044B503E74FA8A1DA162E9",
+  "prompt": "Use case: photorealistic-natural.\nAsset type: website application-scenario thumbnail photograph for identifying banners and suspended objects.\nPrimary request: a natural, realistic photograph of an ordinary, clean contemporary Chinese urban street with mature leafy trees, sidewalks, a few distant mid-rise city buildings and one prominent plain RED fabric banner suspended horizontally across a section of the street between two roadside trees or on a simple roadside frame.\nComposition/framing: horizontal image approximately 1000 by 680 pixels, aspect ratio about 1.47:1. Medium-distance oblique street-level view, with the red banner spanning the upper middle of the image and clearly distinct against green trees. Keep enough street, tree trunks and realistic surrounding architecture visible to communicate the inspection setting. The red fabric is completely blank, with realistic slight folds and attachment ropes. A few parked cars can appear farther down the road, but must not obstruct the banner.\nLighting/style: bright natural daylight, believable shadows and real foliage detail, professional documentary-style urban photography, plausible road markings, restrained natural colors, crisp realistic detail without artificial glossy rendering.\nConstraints: this is a standalone photo, no user interface, no layouts, no text whatsoever, no Chinese characters on the banner or road, no logos, no readable license plates, no watermark, no bounding boxes, no techno effects, no drones, no extra red banners, no artificial illustration or 3D rendering. The red banner is the only primary subject.",
+  "limitations": "AI-generated illustrative street scene, not an on-site photo or customer case. No readable lettering requested on the red banner; parent owns visual review and page integration."
+}

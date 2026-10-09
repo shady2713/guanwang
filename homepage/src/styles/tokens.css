@@ -1,0 +1,63 @@
+/* Design tokens mirror data/content/design-tokens.json. */
+:root {
+  --c-background: #ffffff;
+  --c-surface: #f4f8ff;
+  --c-heading: #101a3a;
+  --c-body: #34445f;
+  --c-muted: #52647e;
+  --c-brand: #0066ff;
+  --c-button: #0052cc;
+  --c-border: #dce6f3;
+  --c-success: #087f5b;
+  --c-notice: #9a5b00;
+
+  --content-max: 1440px;
+  --gutter: 40px;
+  --radius-stage: 16px;
+  --radius-button: 8px;
+  --touch-min: 44px;
+
+  --space-section: 104px;
+  --space-block: 24px;
+
+  --font-sans: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-hero: clamp(34px, 5.2vw, 72px);
+  --fs-heading: clamp(26px, 3vw, 44px);
+  --fs-body: 16px;
+  --fs-control: 15px;
+  --fs-secondary: 13px;
+
+  --ease-enter: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-enter: 480ms;
+  --dur-tab: 200ms;
+  --dur-node: 240ms;
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --gutter: 28px;
+    --space-section: 76px;
+    --radius-stage: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --gutter: 20px;
+    --space-section: 52px;
+    --radius-stage: 10px;
+  }
+}
+
+@media (max-width: 374px) {
+  :root {
+    --gutter: 16px;
+    --space-section: 44px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --gutter: 64px;
+  }
+}

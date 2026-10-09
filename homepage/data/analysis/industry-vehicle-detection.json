@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "1.0",
+  "analysisId": "industry-vehicle-detection-v1",
+  "scenarioId": "industry",
+  "presetId": "vehicle-detection",
+  "status": "ready",
+  "provenance": {
+    "kind": "authored-demo",
+    "displayLabel": "功能演示",
+    "annotationMethod": "manual-reviewed"
+  },
+  "reviewedAt": "2026-10-09T00:00:00+08:00",
+  "media": {
+    "mediaId": "industry-v1",
+    "sha256": "75a14723f494ceffb8613d87930167b852ee53642e0c7b8fc5df9bea5990a0a5",
+    "encodedWidth": 1264,
+    "encodedHeight": 640,
+    "durationSec": 10,
+    "timebase": "presentation-seconds",
+    "frameRate": {
+      "numerator": 24,
+      "denominator": 1
+    }
+  },
+  "playbackWindow": {
+    "startSec": 0.0,
+    "endSec": 5.25
+  },
+  "chain": {
+    "id": "chain-detection",
+    "representation": "conceptual-preset",
+    "nodes": [
+      {
+        "id": "input",
+        "type": "input",
+        "label": "视频输入",
+        "description": "使用当前预设视频"
+      },
+      {
+        "id": "preprocess",
+        "type": "preprocess",
+        "label": "抽帧处理",
+        "description": "按任务组织输入画面"
+      },
+      {
+        "id": "detect",
+        "type": "detect",
+        "label": "车辆检测",
+        "description": "定位画面中的车辆"
+      },
+      {
+        "id": "output",
+        "type": "output",
+        "label": "结果输出",
+        "description": "展示车辆位置"
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "preprocess"
+      },
+      {
+        "from": "preprocess",
+        "to": "detect"
+      },
+      {
+        "from": "detect",
+        "to": "output"
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "vehicle-a",
+      "label": "车辆 A",
+      "className": "vehicle",
+      "segments": [
+        {
+          "id": "vehicle-a-s1",
+          "interval": {
+            "startSec": 0.0,
+            "endSec": 5.25
+          },
+          "interpolation": "linear",
+          "maxInterpolationGapSec": 0.35,
+          "samples": [
+            {
+              "timeSec": 0.0,
+              "box": {
+                "x": 0.7934,
+                "y": 0.6794,
+                "width": 0.0502,
+                "height": 0.0699
+              }
+            },
+            {
+              "timeSec": 0.25,
+              "box": {
+                "x": 0.8092,
+                "y": 0.6554,
+                "width": 0.0475,
+                "height": 0.0671
+              }
+            },
+            {
+              "timeSec": 0.5,
+              "box": {
+                "x": 0.8249,
+                "y": 0.6314,
+                "width": 0.0448,
+                "height": 0.0643
+              }
+            },
+            {
+              "timeSec": 0.75,
+              "box": {
+                "x": 0.837,
+                "y": 0.614,
+                "width": 0.0424,
+                "height": 0.0607
+              }
+            },
+            {
+              "timeSec": 1.0,
+              "box": {
+                "x": 0.8491,
+                "y": 0.5965,
+                "width": 0.04,
+                "height": 0.057
+              }
+            },
+            {
+              "timeSec": 1.25,
+              "box": {
+                "x": 0.8581,
+                "y": 0.5808,
+                "width": 0.0376,
+                "height": 0.0547
+              }
+            },
+            {
+              "timeSec": 1.5,
+              "box": {
+                "x": 0.867,
+                "y": 0.565,
+                "width": 0.0351,
+                "height": 0.0523
+              }
+            },
+            {
+              "timeSec": 1.75,
+              "box": {
+                "x": 0.8736,
+                "y": 0.5552,
+                "width": 0.0337,
+                "height": 0.0508
+              }
+            },
+            {
+              "timeSec": 2.0,
+              "box": {
+                "x": 0.8801,
+                "y": 0.5453,
+                "width": 0.0323,
+                "height": 0.0483
+              }
+            },
+            {
+              "timeSec": 2.25,
+              "box": {
+                "x": 0.8856,
+                "y": 0.5336,
+                "width": 0.0309,
+                "height": 0.0461
+              }
+            },
+            {
+              "timeSec": 2.5,
+              "box": {
+                "x": 0.891,
+                "y": 0.5218,
+                "width": 0.0294,
+                "height": 0.0439
+              }
+            },
+            {
+              "timeSec": 2.75,
+              "box": {
+                "x": 0.8945,
+                "y": 0.5137,
+                "width": 0.0285,
+                "height": 0.0419
+              }
+            },
+            {
+              "timeSec": 3.0,
+              "box": {
+                "x": 0.8979,
+                "y": 0.505,
+                "width": 0.0275,
+                "height": 0.0374
+              }
+            },
+            {
+              "timeSec": 3.25,
+              "box": {
+                "x": 0.9013,
+                "y": 0.4972,
+                "width": 0.0267,
+                "height": 0.0356
+              }
+            },
+            {
+              "timeSec": 3.5,
+              "box": {
+                "x": 0.9047,
+                "y": 0.4894,
+                "width": 0.0259,
+                "height": 0.0342
+              }
+            },
+            {
+              "timeSec": 3.75,
+              "box": {
+                "x": 0.9069,
+                "y": 0.4806,
+                "width": 0.0241,
+                "height": 0.033
+              }
+            },
+            {
+              "timeSec": 4.0,
+              "box": {
+                "x": 0.9091,
+                "y": 0.4718,
+                "width": 0.0224,
+                "height": 0.0313
+              }
+            },
+            {
+              "timeSec": 4.25,
+              "box": {
+                "x": 0.9102,
+                "y": 0.4668,
+                "width": 0.0208,
+                "height": 0.0307
+              }
+            },
+            {
+              "timeSec": 4.5,
+              "box": {
+                "x": 0.9112,
+                "y": 0.4618,
+                "width": 0.0194,
+                "height": 0.0287
+              }
+            },
+            {
+              "timeSec": 4.75,
+              "box": {
+                "x": 0.9118,
+                "y": 0.4568,
+                "width": 0.0181,
+                "height": 0.0277
+              }
+            },
+            {
+              "timeSec": 5.0,
+              "box": {
+                "x": 0.9124,
+                "y": 0.4518,
+                "width": 0.018,
+                "height": 0.0256
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rois": [],
+  "rules": [],
+  "events": [],
+  "evidence": [],
+  "cues": [
+    {
+      "id": "c-det-input",
+      "range": {
+        "startSec": 0.0,
+        "endSec": 0.7
+      },
+      "kind": "node-emphasis",
+      "targetId": "input",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-det-preprocess",
+      "range": {
+        "startSec": 1.4,
+        "endSec": 2.1
+      },
+      "kind": "node-emphasis",
+      "targetId": "preprocess",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-det-detect",
+      "range": {
+        "startSec": 2.9,
+        "endSec": 3.6
+      },
+      "kind": "node-emphasis",
+      "targetId": "detect",
+      "purpose": "explanation"
+    },
+    {
+      "id": "c-det-output",
+      "range": {
+        "startSec": 4.5,
+        "endSec": 5.25
+      },
+      "kind": "node-emphasis",
+      "targetId": "output",
+      "purpose": "explanation"
+    }
+  ]
+}

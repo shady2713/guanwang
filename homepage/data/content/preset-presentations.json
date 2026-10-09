@@ -1,0 +1,54 @@
+[
+  {
+    "selection": {
+      "scenarioId": "industry",
+      "presetId": "vehicle-detection"
+    },
+    "mediaId": "industry-v1"
+  },
+  {
+    "selection": {
+      "scenarioId": "industry",
+      "presetId": "region-entry"
+    },
+    "mediaId": "industry-v1"
+  },
+  {
+    "selection": {
+      "scenarioId": "language",
+      "presetId": "find-cyclist",
+      "queryId": "find-cyclist-preset"
+    },
+    "mediaId": "language-v1",
+    "playbackWindow": {
+      "startSec": 6.5,
+      "endSec": 9.75
+    },
+    "query": {
+      "text": "查找骑行人员"
+    }
+  },
+  {
+    "selection": {
+      "scenarioId": "image",
+      "presetId": "similar-vehicle",
+      "referenceId": "vehicle-reference-preset"
+    },
+    "mediaId": "image-v1",
+    "playbackWindow": {
+      "startSec": 6,
+      "endSec": 9.75
+    },
+    "reference": {
+      "url": "media/reference-vehicle.jpg",
+      "mediaId": "image-v1",
+      "timeSec": 7,
+      "crop": {
+        "x": 0.49013,
+        "y": 0.34524,
+        "width": 0.04605,
+        "height": 0.05804
+      }
+    }
+  }
+]

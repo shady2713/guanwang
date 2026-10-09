@@ -1,0 +1,26 @@
+[
+  {
+    "file": "assets/posters/industry.jpg",
+    "sourceMediaId": "industry-v1",
+    "sourceHash": "75a14723f494ceffb8613d87930167b852ee53642e0c7b8fc5df9bea5990a0a5",
+    "sourceTimeSec": 0.2,
+    "extractedFrameOnly": true,
+    "analysisOverlayIncluded": false
+  },
+  {
+    "file": "assets/posters/language.jpg",
+    "sourceMediaId": "language-v1",
+    "sourceHash": "bbb4217ab455d43637ddf556efc8762fb9e3647b403d7ea833792198a5106a66",
+    "sourceTimeSec": 7.5,
+    "extractedFrameOnly": true,
+    "analysisOverlayIncluded": false
+  },
+  {
+    "file": "assets/posters/image-search.jpg",
+    "sourceMediaId": "image-v1",
+    "sourceHash": "7c129e01036aacb92cee66922b4ec6c55920b7262e0d39d313aba30df549dcaa",
+    "sourceTimeSec": 8.5,
+    "extractedFrameOnly": true,
+    "analysisOverlayIncluded": false
+  }
+]

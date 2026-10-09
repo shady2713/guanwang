@@ -1,0 +1,20 @@
+{
+  "asset": "road-empty.png",
+  "tool": "built-in image_gen",
+  "use_case": "precise-object-edit",
+  "reference_image": "C:/Users/64576/Desktop/视界/website/dist/assets/waterfront.webp",
+  "generated_source": "C:/Users/64576/.codex/generated_images/01a118df-2e1e-74e0-9df6-b9d1deebdb72/exec-0c2114d8-563d-4d59-b332-82bc2a0f663f.png",
+  "destination": "C:/Users/64576/Desktop/视界/website/dist/assets/experience/road-empty.png",
+  "width": 1672,
+  "height": 941,
+  "sha256": "4925edeeb9b814b27824ef4ede083fec13866ee55934ed90c9d7b1a88aa9fedf",
+  "bytes": 3011691,
+  "prompt": "Use case: precise-object-edit. Asset type: fixed photographic background for a website vehicle-tracking animation. Image 1 is the exact edit target, NOT a style reference. Preserve the original wide 1672-by-941 composition and roughly 16:9 aspect ratio, exact overhead oblique camera angle, exact road geometry, width and diagonal route from upper left to lower right, exact lake water, shoreline railing, sidewalk paving, pedestrians, trees, shrubs, buildings, street lamps, shadows and natural daylight. Change ONLY this: remove ALL FOUR visible cars from the road (black car near upper left, white car mid-left, black car near center, white car near lower-left) and their car-specific shadows/reflections. Seamlessly fill each removed vehicle area with the appropriate existing realistic gray asphalt texture and original lane markings. Keep the double yellow road center lines and white road-edge lines in the same positions, perspective and style. Do not shift, rotate, crop, zoom, regenerate, beautify or rearrange the scene. No additional vehicles, drones, text, graphics, HUD, bounding boxes, overlays, symbols or watermarks. The road must be completely empty of vehicles while everything outside the small vehicle removal areas remains visually unchanged. Photographic realism, matched original light and texture. Return one opaque PNG image.",
+  "inspection": {
+    "all_four_vehicles_removed": true,
+    "road_geometry_preserved_visually": true,
+    "external_scene_preserved_visually": true,
+    "added_ui": false,
+    "limitation": "Generative removal retains visual composition; pixel-identical preservation of unedited regions is not guaranteed."
+  }
+}

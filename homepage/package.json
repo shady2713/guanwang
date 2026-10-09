@@ -1,0 +1,20 @@
+{
+  "name": "shijie-aimaster-homepage",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "视界 AIMaster 官网首页（静态，Vite + TypeScript 原生实现）",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "media": "node scripts/build-media.mjs",
+    "verify:data": "node scripts/verify-data.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
